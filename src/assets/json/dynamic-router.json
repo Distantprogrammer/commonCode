@@ -1,0 +1,122 @@
+{
+  "code": 200,
+  "message": "操作成功",
+  "data": [
+    {
+      "path": "/home",
+      "name": "PageHome",
+      "component": "/home/index.vue",
+      "meta": {
+        "icon": "HomeFilled",
+        "title": "router.home_page",
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      }
+    },
+    {
+      "path": "/components",
+      "name": "PageComponents",
+      "component": "/components/index.vue",
+      "meta": {
+        "icon": "Grid",
+        "title": "router.home_components",
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/components/quickConfigurationForm",
+          "name": "quickConfigurationForm",
+          "component": "/components/views/QuickConfigurationForm/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.quickConfigurationForm",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/components/quickConfigurationForm/v2",
+              "name": "quickConfigurationFormV2",
+              "component": "/components/views/QuickConfigurationForm/vue2/vue2.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.vue2",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/components/quickConfigurationForm/v3",
+              "name": "quickConfigurationFormV3",
+              "component": "/components/views/QuickConfigurationForm/vue3/vue3.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.vue3",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/functions",
+      "name": "PageFunctions",
+      "component": "/functions/index.vue",
+      "meta": {
+        "icon": "Tools",
+        "title": "router.home_functions",
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/functions/tableMemorySelection",
+          "name": "tableMemorySelection",
+          "component": "/functions/views/TableMemorySelection/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.tableMemorySelection",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/functions/tableMemorySelection/v2",
+              "name": "tableMemorySelectionV2",
+              "component": "/functions/views/TableMemorySelection/vue2.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.vue2",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/functions/tableMemorySelection/v3",
+              "name": "tableMemorySelectionV3",
+              "component": "/functions/views/TableMemorySelection/vue3.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.vue3",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
