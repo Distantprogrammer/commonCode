@@ -161,7 +161,7 @@ const selectFn = row => {
       <pre>
 /**
  * @description
- * 组件自带的，我操，不看文档
+ * 组件自带的
  * el-table 绑定 row-key="id" 
  * &lt;el-table-column :reserve-selection="true" type="selection" /> :reserve-selection='true'
  * 
