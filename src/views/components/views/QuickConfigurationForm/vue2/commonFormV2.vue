@@ -68,23 +68,8 @@ export default {
       }
     }
   },
-  components: {
-  },
-  watch: {
-    // formModel: {
-    //   handler (val) {
-    //     debugger
-    //     this.formOptions = {
-    //       form: val.form,
-    //       formArr:val.formArr
-    //     }
-    //     // this.setRulesMsg(val.formArr)
-    //   },
-    //   immediate: true,
-    //   deep: true
-    // }
-  },
   methods: {
+    // 设置表单验证规则
     setRulesMsg (arr = []) {
       const inputsArr = ['el-input']
       const selectsArr = ['el-select', 'el-cascader', 'el-data-picker', 'el-switch', 'el-radio-group', 'el-checkbox-group']
@@ -137,6 +122,7 @@ export default {
         }
       })
     },
+    // 验证
     validate (validateFn) {
       this.$refs['myForm'].validate((valid) => {
         if (valid) {
@@ -156,6 +142,7 @@ export default {
     resetFields () {
       this.$refs['myForm'].resetFields()
     },
+    // 可有可无
     getFormValue(){
       return this.formOptions.form
     }

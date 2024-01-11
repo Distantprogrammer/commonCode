@@ -18,10 +18,13 @@ export default {
     home_page: '系统首页',
     home_components: '组件',
     home_functions: '功能',
+    home_bugs: 'Bug',
     tableMemorySelection: '表格记忆选择',
     quickConfigurationForm: '快速配置表单',
     vue2: 'vue2',
     vue3: 'vue3',
+    practicalOperation:'实际操作',
+    relatedArticle:'相关文章'
   },
   // 语言类型配置
   language: {

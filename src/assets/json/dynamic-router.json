@@ -15,6 +15,44 @@
       }
     },
     {
+      "path": "/bugs",
+      "name": "PageBugs",
+      "component": "/bugs/index.vue",
+      "meta": {
+        "icon": "Grid",
+        "title": "router.home_bugs",
+        "isFull": false,
+        "isAffix": true,
+        "isKeepAlive": true
+      },
+      "children": [
+        {
+          "path": "/bugs/practicalOperation",
+          "name": "practicalOperation",
+          "component": "/bugs/views/practicalOperation/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.practicalOperation",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/bugs/relatedArticle",
+          "name": "relatedArticle",
+          "component": "/bugs/views/relatedArticle/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.relatedArticle",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          }
+        }
+      ]
+    },
+    {
       "path": "/components",
       "name": "PageComponents",
       "component": "/components/index.vue",
