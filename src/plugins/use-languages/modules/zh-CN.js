@@ -19,6 +19,7 @@ export default {
     home_components: '组件',
     home_functions: '功能',
     home_bugs: 'Bug',
+    home_developmentSkills: '开发技巧',
     tableMemorySelection: '表格记忆选择',
     quickConfigurationForm: '快速配置表单',
     vue2: 'vue2',

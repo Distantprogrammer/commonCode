@@ -22,6 +22,13 @@
       "createTime": "2024-01-02 15:36",
       "id": 3,
       "link": "https://zhuanlan.zhihu.com/p/550357781"
+    },
+    {
+      "title": "git提交忽略文件名称大小写问题解决",
+      "content": "在项目开发中，关于文件名称大小写的修改，项目可能会默认忽略，对于一开始就新建的文件名问题不大。",
+      "createTime": "2024-01-31 10:58",
+      "id": 4,
+      "link": "https://blog.csdn.net/cxwtsh123/article/details/123812272"
     }
   ]
 }

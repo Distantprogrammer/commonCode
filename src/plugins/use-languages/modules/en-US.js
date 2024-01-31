@@ -19,6 +19,7 @@ export default {
     home_components: 'Components',
     home_functions: 'Functions',
     home_bugs:'Bug',
+    home_developmentSkills:'DevelopmentSkills',
     tableMemorySelection: 'tableMemorySelection',
     quickConfigurationForm: 'quickConfigurationForm',
     vue2: 'vue2',
