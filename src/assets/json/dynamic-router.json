@@ -139,6 +139,68 @@
               }
             }
           ]
+        },
+        {
+          "path": "/components/pdfPreview",
+          "name": "pdfPreview",
+          "component": "/components/views/PdfPreview/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.pdfPreview",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          },
+          "children": [
+            {
+              "path": "/components/pdfPreview/canvas",
+              "name": "pdfPreviewCanvas",
+              "component": "/components/views/PdfPreview/Canvas/index.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.canvas",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/components/pdfPreview/iframe",
+              "name": "pdfPreviewIframe",
+              "component": "/components/views/PdfPreview/Iframe/index.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.iframe",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            },
+            {
+              "path": "/components/pdfPreview/html",
+              "name": "pdfPreviewHtml",
+              "component": "/components/views/PdfPreview/Html/index.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.html",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            }
+          ]
+        },
+        {
+          "path": "/components/pictureToText",
+          "name": "pictureToText",
+          "component": "/components/views/PictureToText/index.vue",
+          "meta": {
+            "icon": "Finished",
+            "title": "router.pictureToText",
+            "isFull": false,
+            "isAffix": true,
+            "isKeepAlive": true
+          }
         }
       ]
     },
