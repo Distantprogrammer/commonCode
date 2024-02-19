@@ -20,6 +20,7 @@ export default {
     home_functions: '功能',
     home_bugs: 'Bug',
     home_developmentSkills: '开发技巧',
+    cutVideoCover: '视频第一帧',
     tableMemorySelection: '表格记忆选择',
     quickConfigurationForm: '快速配置表单',
     pdfPreview:'pdf预览',

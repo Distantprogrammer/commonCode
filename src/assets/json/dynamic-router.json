@@ -36,7 +36,21 @@
             "isFull": false,
             "isAffix": true,
             "isKeepAlive": true
-          }
+          },
+          "children": [
+            {
+              "path": "/developmentSkills/cutVideoCover",
+              "name": "cutVideoCover",
+              "component": "/developmentSkills/views/practicalOperation/cutVideoCover.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.cutVideoCover",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            }
+          ]
         },
         {
           "path": "/developmentSkills/relatedArticle",

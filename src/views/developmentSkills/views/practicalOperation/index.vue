@@ -1,6 +1,7 @@
 <template>
   <div class="page-wrapper flex-vertical">
-    <div class="app-container fill"> 
+    <div class="app-container fill">
+      <router-view></router-view>
     </div>
   </div>
 </template>

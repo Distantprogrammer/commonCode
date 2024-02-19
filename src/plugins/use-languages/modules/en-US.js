@@ -20,6 +20,7 @@ export default {
     home_functions: 'Functions',
     home_bugs:'Bug',
     home_developmentSkills:'DevelopmentSkills',
+    cutVideoCover: 'cutVideoCover',
     tableMemorySelection: 'tableMemorySelection',
     quickConfigurationForm: 'quickConfigurationForm',
     pdfPreview:'pdfPreview',
