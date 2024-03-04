@@ -30,3 +30,4 @@ coverage
 #no
 !public/*
 
+dist.zip

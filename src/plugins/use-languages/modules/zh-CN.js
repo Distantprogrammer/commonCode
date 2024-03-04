@@ -19,6 +19,7 @@ export default {
     home_components: '组件',
     home_functions: '功能',
     home_bugs: 'Bug',
+    vShowTemplateTwoChildNode: 'v-show不生效（模板两个字节点）',
     home_developmentSkills: '开发技巧',
     cutVideoCover: '视频第一帧',
     tableMemorySelection: '表格记忆选择',

@@ -88,7 +88,21 @@
             "isFull": false,
             "isAffix": true,
             "isKeepAlive": true
-          }
+          },
+          "children": [
+            {
+              "path": "/bugs/practicalOperation/vShowTemplateTwoChildNode",
+              "name": "vShowTemplateTwoChildNode",
+              "component": "/bugs/views/practicalOperation/vShowTemplateTwoChildNode.vue",
+              "meta": {
+                "icon": "Finished",
+                "title": "router.vShowTemplateTwoChildNode",
+                "isFull": false,
+                "isAffix": true,
+                "isKeepAlive": true
+              }
+            }
+          ]
         },
         {
           "path": "/bugs/relatedArticle",
