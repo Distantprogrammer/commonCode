@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "vite",
+    "server": "concurrently \"nodemon ./server/api.js\" \"npm run dev\"",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
@@ -13,6 +14,7 @@
     "@element-plus/icons-vue": "^2.1.0",
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
+    "concurrently": "^8.2.2",
     "element-plus": "^2.4.4",
     "js-cookie": "^3.0.5",
     "jsencrypt": "^3.3.2",
@@ -20,6 +22,7 @@
     "nprogress": "^0.2.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.2.0",
+    "prismjs": "^1.29.0",
     "tesseract.js": "2.1.4",
     "vue": "^3.3.10",
     "vue-i18n": "^9.2.2",
