@@ -25,17 +25,17 @@ function writeFile(filePath, data) {
  * { recursive: true }选项意味着如果上级目录不存在，也会一并创建。如果你只想创建单个文件夹，可以省略该选项
  */
 
-function createFolder(folderPath) {
-  return new Promise((resolve, reject) => {
-    fs.mkdir(folderPath, { recursive: true }, (error) => {
-      if (error) {
-        reject(error);
-      } else {
-        resolve();
-      }
-    });
-  });
-}
+// function createFolder(folderPath) {
+//   return new Promise((resolve, reject) => {
+//     fs.mkdir(folderPath, { recursive: true }, (error) => {
+//       if (error) {
+//         reject(error);
+//       } else {
+//         resolve();
+//       }
+//     });
+//   });
+// }
 
 exports.writeFile = writeFile
-exports.createFolder = createFolder
+// exports.createFolder = createFolder

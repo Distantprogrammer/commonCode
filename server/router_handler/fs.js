@@ -87,14 +87,14 @@ exports.createFolder = (req, res) => {
     .then((data) => {
       res.send({
         status: 0,
-        message: "删除文件成功！",
+        message: "新建文件夹成功！",
         data: data,
       });
     })
     .catch((error) => {
       res.send({
         status: 1,
-        message: "删除文件出错",
+        message: "新建文件夹出错",
         data: error,
       });
     });

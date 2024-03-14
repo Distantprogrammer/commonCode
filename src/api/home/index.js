@@ -11,3 +11,6 @@ export const readFile = (location)=>{
   location = defaultLocation + location
   return request.get(`/api/readFile?location=${location}`)
 }
+export const createFolder = (location)=>{
+  return request.post('/api/createFolder',{location:defaultLocation + location})
+}

@@ -37,13 +37,27 @@
                 <el-input v-model="form.redirect"></el-input>
               </el-form-item>
               <el-form-item label="视图文件路径" prop="component">
-                <el-input v-model="form.component"></el-input>
+                <el-input v-model="form.component">
+                  <template #prepend>
+                    {{
+            currentNodeData.component.replace(currentNodeData.component.split('/')[currentNodeData.component.split('/').length
+              - 1], '') }}
+
+                  </template>
+                  <template #append>
+                    /index.vue
+                  </template>
+                </el-input>
               </el-form-item>
               <el-form-item label="菜单图标" prop="icon">
                 <el-input v-model="form.icon"></el-input>
               </el-form-item>
               <el-form-item label="菜单标题" prop="title">
-                <el-input v-model="form.title"></el-input>
+                <el-input v-model="form.title" type="text">
+                  <template #prepend>
+                    router.
+                  </template>
+                </el-input>
               </el-form-item>
               <el-form-item label="是否全屏" prop="isFull">
                 <el-radio-group v-model="form.isFull">
@@ -101,7 +115,7 @@ defineOptions({ name: 'PageHome' })
 import { ref, reactive } from 'vue'
 import { ElMessage, ElMessageBox } from 'element-plus'
 import { useRouter } from 'vue-router'
-import { addRouter, readFile } from '@/api/home/index.js'
+import { addRouter, readFile, createFolder } from '@/api/home/index.js'
 import useLanguagesZhData from '@/plugins/use-languages/modules/zh-CN.js'
 import useLanguagesEnData from '@/plugins/use-languages/modules/en-US.js'
 const router = useRouter()
@@ -114,14 +128,28 @@ const defaultProps = {
 const data = ref(dynamicRouter.data)
 const dialogVisible = ref(false)
 const form = reactive({
-  zhName: '',
-  usName: '',
-  path: '',
-  name: '',
+  // zhName: '',
+  // usName: '',
+  // path: '',
+  // name: '',
+  // redirect: '',
+  // component: '',
+  // icon: '',
+  // title: '',
+  // isFull: false,
+  // isAffix: false,
+  // isKeepAlive: false,
+  // activeMenu: false,
+  // isLink: false,
+  // isHide: false,
+  zhName: '测试',
+  usName: 'test',
+  path: '/test',
+  name: 'test',
   redirect: '',
-  component: '',
+  component: 'test',
   icon: '',
-  title: '',
+  title: 'test',
   isFull: false,
   isAffix: false,
   isKeepAlive: false,
@@ -167,24 +195,41 @@ const submitEvent = () => {
     }
   })
 }
+
 // 提交前参数设置
 const setSubmitParams = async () => {
   const useLanguagesZh = '/src/plugins/use-languages/modules/zh-CN.js'
   const useLanguagesEn = '/src/plugins/use-languages/modules/en-US.js'
   const routerUrl = '/src/assets/json/dynamic-router.json'
+  const newIndexTemplate = `
+  <template>
+    <div class="page-wrapper">
+      <div class="app-container fill">
+        <RouterView />
+      </div>
+    </div>
+  </template>
+  <script setup>
+  defineOptions({ name: ${form.title})
+  ${'</'}script>`
   if (!currentNodeData.children) {
     currentNodeData.children = []
   }
   // 这里需要深拷贝一份，如果直接修改会直接修改到表单的值
-  const { zhName, usName, path, name, redirect, component, icon, title, isFull, isAffix, isKeepAlive, activeMenu, isLink, isHide } = form
-  currentNodeData.children.push({
+  const { zhName, usName, path, name, redirect, component, icon, title, isFull, isAffix, isKeepAlive, activeMenu, isLink,
+    isHide } = form
+    // 新路由文件地址
+  const newIndexPath = currentNodeData.component.replace(
+    currentNodeData.component.split('/')[currentNodeData.component.split('/').length - 1],
+    component)
+  const newPath = {
     path,
     name,
-    component,
+    component: newIndexPath + '/index.vue',
     redirect,
     meta: {
       icon,
-      title,
+      title: 'router.' + title,
       isFull,
       isAffix,
       isKeepAlive,
@@ -192,36 +237,50 @@ const setSubmitParams = async () => {
       isLink,
       isHide
     }
-  })
-
-
+  }
+  currentNodeData.children.push(newPath)
+  console.log(newPath);
+  // 获取网站当前语言
+  const systemLanguage = JSON.parse(localStorage.getItem('app') || {}).language
+  const apiParamsArr = []
+  // 修改中文映射文件
   if (zhName) {
     useLanguagesZhData.router[title] = zhName
-    const languagesparams = {
+    apiParamsArr.push({
       location: useLanguagesZh,
-      text: 'export default' + JSON.stringify(useLanguagesEnData)
-    }
-    await addRouter(languagesparams)
+      text: 'export default' + JSON.stringify(useLanguagesZhData)
+    })
   }
+  // 修改英文映射文件
   if (usName) {
     useLanguagesEnData.router[title] = usName
-    const languagesparams = {
+    apiParamsArr.push({
       location: useLanguagesEn,
       text: 'export default' + JSON.stringify(useLanguagesEnData)
-    }
-    console.log(languagesparams);
-    await addRouter(languagesparams)
+    })
   }
-
-  const params = {
+  // 修改路由文件
+  apiParamsArr.push({
     location: routerUrl,
     text: JSON.stringify(dynamicRouter)
-  }
-  // 设置提交参数
-  await addRouter(params)
+  })
+  // 创建新路由初始文件
+  apiParamsArr.push({
+    location: '/src/views' + newIndexPath + '/index.vue',
+    text: newIndexTemplate
+  })
+  await createFolder('/src/views' + newIndexPath)
+  // unifyRequest(apiParamsArr)
   // await readFile(routerUrl)
 }
+const unifyRequest = async (apiArr) => {
+  Promise.all(apiArr.map((item) => addRouter(item)))
+    .then((res) => {
+      debugger
+      console.log(res);
+    })
 
+}
 </script>
 
 <style lang="scss" scoped>
