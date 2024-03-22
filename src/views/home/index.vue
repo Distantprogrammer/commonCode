@@ -210,7 +210,7 @@ const setSubmitParams = async () => {
     </div>
   </template>
   <script setup>
-  defineOptions({ name: ${form.title})
+  defineOptions({ name: ${form.title} })
   ${'</'}script>`
   if (!currentNodeData.children) {
     currentNodeData.children = []
@@ -269,8 +269,9 @@ const setSubmitParams = async () => {
     location: '/src/views' + newIndexPath + '/index.vue',
     text: newIndexTemplate
   })
+  // 创建文件
   await createFolder('/src/views' + newIndexPath)
-  // unifyRequest(apiParamsArr)
+  unifyRequest(apiParamsArr)
   // await readFile(routerUrl)
 }
 const unifyRequest = async (apiArr) => {

@@ -963,6 +963,14 @@
     "domelementtype" "^2.2.0"
     "domhandler" "^4.2.0"
 
+"echarts@^5.5.0":
+  "integrity" "sha512-rNYnNCzqDAPCr4m/fqyUFv7fD9qIsd50S6GDFgO1DxZhncCsNsG7IfUlAlvZe5oSEQxtsjnHiUuppzccry93Xw=="
+  "resolved" "https://registry.npmmirror.com/echarts/-/echarts-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "tslib" "2.3.0"
+    "zrender" "5.5.0"
+
 "element-plus@^2.4.4":
   "integrity" "sha512-TlKubXJgxwhER0dw+8ULn9hr9kZjraV4R6Q/eidwWUwCKxwXYPBGmMKsZ/85tlxlhMYbcLZd/YZh6G3QkHX4fg=="
   "resolved" "https://registry.npmmirror.com/element-plus/-/element-plus-2.4.4.tgz"
@@ -2956,6 +2964,11 @@
   "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.6.1.tgz"
   "version" "2.6.1"
 
+"tslib@2.3.0":
+  "integrity" "sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg=="
+  "resolved" "https://registry.npmmirror.com/tslib/-/tslib-2.3.0.tgz"
+  "version" "2.3.0"
+
 "type-check@^0.4.0", "type-check@~0.4.0":
   "integrity" "sha512-XleUoc9uwGXqjWwXaUTZAmzMcFZ5858QA2vvx1Ur5xIcixXIP+8LnFDgRplU30us6teqdlskFfu+ae4K79Ooew=="
   "resolved" "https://registry.npmmirror.com/type-check/-/type-check-0.4.0.tgz"
@@ -3252,3 +3265,10 @@
   "integrity" "sha512-+J9RrgTKOmlxFSDHo0pI1xM6BLVUv+o0ZT9ANtCxGkjIVCCUdx9alUF8Gm+dGLKbkkkidWIHFDZHDMpfITt4+w=="
   "resolved" "https://registry.npmmirror.com/zlibjs/-/zlibjs-0.3.1.tgz"
   "version" "0.3.1"
+
+"zrender@5.5.0":
+  "integrity" "sha512-O3MilSi/9mwoovx77m6ROZM7sXShR/O/JIanvzTwjN3FORfLSr81PsUGd7jlaYOeds9d8tw82oP44+3YucVo+w=="
+  "resolved" "https://registry.npmmirror.com/zrender/-/zrender-5.5.0.tgz"
+  "version" "5.5.0"
+  dependencies:
+    "tslib" "2.3.0"
