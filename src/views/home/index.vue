@@ -210,7 +210,7 @@ const setSubmitParams = async () => {
     </div>
   </template>
   <script setup>
-  defineOptions({ name: ${form.title} })
+  defineOptions({ name: '${form.title}' })
   ${'</'}script>`
   if (!currentNodeData.children) {
     currentNodeData.children = []
@@ -241,7 +241,7 @@ const setSubmitParams = async () => {
   currentNodeData.children.push(newPath)
   console.log(newPath);
   // 获取网站当前语言
-  const systemLanguage = JSON.parse(localStorage.getItem('app') || {}).language
+  // const systemLanguage = JSON.parse(localStorage.getItem('app') || {}).language
   const apiParamsArr = []
   // 修改中文映射文件
   if (zhName) {
