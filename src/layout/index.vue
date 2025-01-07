@@ -16,11 +16,13 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
 import useLayoutStore from '@/stores/modules/layout'
 import useAppStore from '@/stores/modules/app'
 import Aside from './components/Aside/index.vue'
 import Header from './components/Header/index.vue'
 import Main from './components/Main/index.vue'
+import { start } from "qiankun";
 
 defineOptions({ name: 'AppLayoutWrapper' })
 
@@ -32,7 +34,9 @@ const showTagsView = computed(() => layoutStore.showTagsView)
 
 const appStore = useAppStore()
 const collapsed = computed(() => appStore.collapsed)
-
+onMounted(() => {
+  start()
+})
 //provide子组件里将会使用到的数据，为了能更好的追踪数据流向，不要在非layout目录inject这些数据
 provide('showLogo', showLogo)
 provide('showHeader', showHeader)

@@ -1,8 +1,8 @@
 <template>
-  <el-main style="position: relative;">
+  <el-main style="position: relative;" class="main_content" :class="{ 'is_scroll': isScroll }">
     <div class="view-source-btn">
       <!-- <ViewSource></ViewSource> -->
-      <el-button class="btn" >查看代码</el-button>
+      <el-button class="btn">查看代码</el-button>
     </div>
     <router-view v-slot="{ Component, route }">
       <transition appear name="fade-transform" mode="out-in">
@@ -11,23 +11,39 @@
         </keep-alive>
       </transition>
     </router-view>
+    <div style="transform: translateY(-8%) scale(0.84);overflow: hidden;">
+      <div id="subapp-viewport"></div>
+    </div>
   </el-main>
 </template>
 
 <script setup>
 import useKeepAliveStore from '@/stores/modules/keep-alive'
 import ViewSource from '@/components/ViewSource/index.vue'
-
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+const route = useRoute()
 defineOptions({ name: 'AppLayoutMain' })
 
 const keepAliveStore = useKeepAliveStore()
+const isScroll = computed(() => {
+  return !(route?.meta?.overflow === 'hidden')
+})
 </script>
 <style lang="scss" scoped>
-.view-source-btn{
+.main_content {
+  overflow: hidden;
+  &.is_scroll {
+    overflow-y: auto;
+  }
+}
+
+.view-source-btn {
   position: absolute;
   top: 15px;
   right: 15px;
-  .btn{
+
+  .btn {
     background: transparent;
     color: #000;
     font-weight: 800;
