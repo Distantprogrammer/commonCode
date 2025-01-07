@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "server": "concurrently \"nodemon ./server/api.js\" \"npm run dev\"",
+    "server":  "concurrently \"npm run dev\" \"npm run start:sub-html\" \"npm run start:sub-react\"",
+    "start:sub-html": "cd childrenApp\\sub-html && npm start",
+    "start:sub-react": "cd childrenApp\\sub-react && npm start",
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",

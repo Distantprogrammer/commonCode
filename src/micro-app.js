@@ -11,16 +11,6 @@ const microApps = [
     entry: import.meta.env.VITE_APP_SUB_HTML,
     activeRule: '/sub-html'
   },
-  {
-    name: 'sub-monaco-editor',
-    entry: import.meta.env.VITE_APP_SUB_MONACOEDITOR,
-    activeRule: '/sub-monaco-editor'
-  },
-  {
-    name: 'sub-vue-ts-canvans',
-    entry: import.meta.env.VITE_APP_SUB_VUE_TS_CANVANS,
-    activeRule: '/sub-vue-ts-canvans'
-  }
 ]
 
 const apps = microApps.map(item => {

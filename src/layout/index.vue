@@ -9,7 +9,7 @@
           <Header />
         </el-header>
         <Main />
-        <el-footer v-if="showFooter"><a href="https://beian.miit.gov.cn">湘ICP备2022020176号-1</a></el-footer>
+        <el-footer v-if="showFooter"><a href="https://beian.miit.gov.cn"></a></el-footer>
       </el-container>
     </el-container>
   </div>
