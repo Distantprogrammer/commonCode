@@ -12,6 +12,7 @@
       :collapse="collapsed"
       :collapse-transition="false"
     >
+      <div class="section-title">MENU</div>
       <sidebar-item :menus="menus" />
     </el-menu>
   </el-scrollbar>
@@ -34,5 +35,5 @@ const collapsed = inject('collapsed')
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/styles/menu.scss';
+@use '@/assets/styles/menu.scss';
 </style>

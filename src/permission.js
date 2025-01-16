@@ -4,7 +4,7 @@ import NProgress from '@/plugins/use-nprogress'
 import useAuthStore from '@/stores/modules/auth'
 import { getToken } from '@/utils/cookie'
 
-const white = ['/login','/sub-react','/subapp/sub-react']
+const white = ['/login','/subapp/sub-react','/subapp/sub-vue3']
 
 // 通过路由守卫开启/关闭页面进度条
 router.beforeEach(async (to, from, next) => {

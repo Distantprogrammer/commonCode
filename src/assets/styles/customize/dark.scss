@@ -1,0 +1,81 @@
+// 自定义dark主题
+html.dark {
+  // color-scheme: dark;
+
+  // 基础颜色变量
+  --el-bg-color: rgba(3, 6, 22, 1);
+  --el-bg-color-page: transparent;
+  --el-bg-color-overlay: rgba(3, 6, 22, 1);
+  --el-text-color-primary: #999;
+  --el-text-color-regular: #999;
+  --el-text-color-secondary: #999;
+  --el-border-color: transparent;
+  --el-border-color-light: #999;
+  --el-fill-color-blank: #2529D8;
+
+  --el-color-primary: #fff;
+  --el-text-color: #fff;
+
+  --el-menu-item-height:46px;
+  --height-tags-view:28px;
+  .el-aside {
+  }
+  .el-container {
+    background-color: var(--el-bg-color);
+  }
+  a{
+    color: var(--el-color-primary);
+  }
+  // 组件相关
+  .el-button {
+    &--primary {
+      --el-button-bg-color: var(--el-color-primary);
+      --el-button-border-color: var(--el-color-primary);
+      --el-button-hover-bg-color: var(--el-color-primary-light-3);
+      --el-button-hover-border-color: var(--el-color-primary-light-3);
+    }
+
+    &--default {
+      --el-button-bg-color: var(--el-fill-color-blank);
+      --el-button-border-color: var(--el-border-color);
+      --el-button-hover-bg-color:#7533d5;
+      --el-button-hover-border-color:transparent;
+      --el-button-hover-text-color:#fff;
+    }
+  }
+
+  .el-input {
+    --el-input-bg-color: var(--el-bg-color-overlay);
+    --el-input-border-color: var(--el-border-color);
+    --el-input-hover-border-color: var(--el-border-color-light);
+    --el-input-text-color: var(--el-text-color-regular);
+    --el-input-placeholder-color: var(--el-text-color-secondary);
+  }
+
+  .el-card {
+    --el-card-bg-color: var(--el-bg-color-overlay);
+    --el-card-border-color: var(--el-border-color);
+  }
+
+  .el-menu {
+    --el-menu-bg-color: var(--el-bg-color-overlay);
+    --el-menu-text-color: var(--el-text-color-regular);
+    --el-menu-hover-bg-color: var(--el-border-color-light);
+    --el-menu-active-color: var(--el-color-primary);
+  }
+
+  // 滚动条样式
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--el-border-color-light);
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--el-bg-color);
+  }
+}

@@ -11,6 +11,7 @@ import SvgIcon from '@/components/SvgIcon/index.vue'
 defineOptions({ name: 'AppThemeModeSwitch' })
 
 const isDark = useDark()
+useToggle(true)
 const toggleDark = useToggle(isDark)
 
 const icon = computed(() => isDark.value ? 'night-mode' : 'daytime-mode')

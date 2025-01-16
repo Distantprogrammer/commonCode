@@ -69,12 +69,12 @@ export const staticRouter = [
     name: 'PageLogin',
     component: () => import('@/views/login/index.vue'),
     meta: { title: '登录' }
-  }
+  },
   // {
   //   path: '/subapp/sub-react',
   //   name: 'PageLogin',
   //   meta: { title: '登录' }
-  // }
+  // },
 ]
 
 export const errorRouter = [

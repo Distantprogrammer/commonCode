@@ -1,4 +1,4 @@
-import usePersistedstate from '@/plugins/use-persistedstate'
+                      import usePersistedstate from '@/plugins/use-persistedstate'
 
 const useLayoutStore = defineStore('layout', () => {
   const state = reactive({

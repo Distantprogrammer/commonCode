@@ -2,25 +2,35 @@ import { fileURLToPath, URL } from 'node:url'
 import { defineConfig } from 'vite'
 
 import useVitePlugins from './vite-plugins'
-
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: useVitePlugins(),
+  // publicDir: false,
+  plugins: [
+    ...useVitePlugins(),
+  ],
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
       "vue-i18n": "vue-i18n/dist/vue-i18n.cjs.js"
     }
   },
+  esbuild: {
+    loader: 'jsx',
+    include: /src\/.*\.jsx$/,
+  },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "@/assets/styles/element/index.scss" as *;`,
+        // additionalData: `@use "@/assets/styles/element/index.scss" as *;`,
+        silenceDeprecations: ['legacy-js-api'],
       },
     },
   },
   // 开发环境代理配置，请更换target为后端服务器地址
   server: {
+    hmr:{
+      overlay:false,
+    },
     host: true,
     proxy: {
       // https://cn.vitejs.dev/config/#server-proxy
