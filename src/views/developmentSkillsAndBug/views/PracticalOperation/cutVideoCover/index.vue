@@ -4,15 +4,16 @@
       <div>
         <el-button type="success" @click="getImge('url')">以url形式获取视频第一帧</el-button>
         <el-button type="info" @click="getImge('base64')">以base64形式获取视频第一帧</el-button>
-        <el-input-number class="el-button" style="padding: 0;" v-model="currentTime" :min="1" :max="50"  controls-position="right" placeholder="获取第一秒" />
+        获取指定秒：<el-input-number class="el-button" style="padding: 0;" v-model="currentTime" :min="1" :max="50"  controls-position="right" placeholder="获取第一秒" />
       </div>
+      <div style="color: red;">*打开控制台查看相关输出</div>
       <div>
         返回形式1：以url形式返回，需要配置接口上传
         <br>
         返回形式2：以base64格式返回。可直接用img标签展示
       </div>
       <div style="margin-top: 10px;">
-        <video src="../lib/big_buck_bunny.mp4" controls></video>
+        <video src="@/assets/lib/big_buck_bunny.mp4" controls></video>
       </div>
       <img :src="img" alt="" style="">
     </div>
@@ -83,7 +84,7 @@ function cutVideoCover (url, width = 960, height = 540) {
 
 const getImge = (type) => {
   getImgType.value = type
-  cutVideoCover(new URL('../lib/big_buck_bunny.mp4', import.meta.url).href).then((res) => {
+  cutVideoCover(new URL('@/assets/lib/big_buck_bunny.mp4', import.meta.url).href).then((res) => {
     console.log(res)  //图片地址
     img.value = res
   });

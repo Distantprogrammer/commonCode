@@ -10,7 +10,7 @@ const routes = [
   {
     path: '/sliderCharts',
     name: 'sliderCharts',
-    component: () => import('@/views/components/sliderCharts/index.vue')
+    component: () => import('@/views/sliderCharts/index.vue')
   }
 ]
 

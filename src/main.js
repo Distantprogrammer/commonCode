@@ -25,9 +25,7 @@ app.mount('#app')
 // 引入微服务
 import { registerMicroApps,addGlobalUncaughtErrorHandler } from 'qiankun'
 // 定义loader方法，loading改变时，将变量赋值给App.vue的data中的isLoading
-addGlobalUncaughtErrorHandler((err, isMain, isMicro) => {
-  ElMessage.error('子应用加载错误')
-});
+
 function loader(loading) {
   if (app && app.$children) {
     // app.$children[0] 是App.vue，此时直接改动App.vue的isLoading
@@ -63,5 +61,11 @@ registerMicroApps(apps, {
     }
   ]
 })
+addGlobalUncaughtErrorHandler((err, isMain, isMicro) => {
+  const { message:msg } = err
+  if (msg && msg.includes('died in status LOADING_SOURCE_COD')){
+    ElMessage.error('子应用加载错误')
+  }
+});
 // setDefaultMountApp('/sub-monaco-editor')
 // start()

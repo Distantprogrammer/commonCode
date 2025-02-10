@@ -1,5 +1,5 @@
 <script setup>
-import { ref, watch,  render, nextTick } from 'vue';
+import { ref, watch, render, nextTick,h } from 'vue';
 const props = defineProps({
   sliderList: {
     type: Array,
@@ -39,18 +39,31 @@ const renderSliderTooltip = (e, index) => {
       <div className={`g-slider`} ref="gSlider" id='gSlider'>
         <div className="g-slider-title">
           <div className={`g-slider-round`}></div>
-          <div className="g-slider-text">{ props.sliderList[index].key }</div>
+          <div className="g-slider-text">{props.sliderList[index].key}</div>
         </div>
         <div className="g-slider-tooltips">
           <div className={`g-slider-tooltips-name`}>
-            { props.sliderOption.sliderChartTooltipsName }:
+            {props.sliderOption.sliderChartTooltipsName}:
           </div>
           <div className="g-slider-tooltips-num">
-            &nbsp;{ props.sliderList[index].value }<span>&nbsp;&nbsp;{ props.sliderOption.sliderChartUnit }</span>
+            &nbsp;{props.sliderList[index].value}<span>&nbsp;&nbsp;{props.sliderOption.sliderChartUnit}</span>
           </div>
         </div>
       </div>
     )
+    // return h('div', { ref: 'gSlider', id: 'gSlider', class: 'g-slider' }, [
+    //   h('div', { class: 'g-slider-title' }, [
+    //     h('div', { class: 'g-slider-round' }),
+    //     h('div', { class: 'g-slider-text' }, props.sliderList[index].key)
+    //   ]),
+    //   h('div', { class: 'g-slider-tooltips' }, [
+    //     h('div', { class: 'g-slider-tooltips-name' }, props.sliderOption.sliderChartTooltipsName + ':'),
+    //     h('div', { class: 'g-slider-tooltips-num' }, [
+    //       '\u00A0' + props.sliderList[index].value,
+    //       h('span', '\u00A0\u00A0' + props.sliderOption.sliderChartUnit)
+    //     ])
+    //   ])
+    // ]);
   }
   const dom = renderData()
   render(dom, e.target)
@@ -200,12 +213,13 @@ const sliderChartMouseenter = (e, index) => {
       text-align: center;
       color: rgba(0, 0, 0, 0.65);
       border-radius: 3px;
-      overflow: hidden;
+      // overflow: hidden;
       transform: rotateZ(45deg);
       border: 1px solid #ededed;
       background-color: #fafafa;
 
       p {
+        margin: 0;
         transform: rotateZ(-45deg);
       }
     }

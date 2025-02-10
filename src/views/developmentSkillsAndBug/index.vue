@@ -7,8 +7,5 @@
 </template>
 
 <script setup>
-defineOptions({ name: 'practicalOperation' })
+defineOptions({ name: 'PageDevelopmentSkillsAndBug' })
 </script>
-<style lang="scss" scoped>
-
-</style>

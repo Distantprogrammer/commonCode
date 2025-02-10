@@ -3,8 +3,9 @@
     <div class="app-container fill">
       <div class="cell" v-for="(item, index) in relatedArticleList" :key="index">
         <div class="title">
-          <span class="numerical_order">{{ index + 1 }}、</span> 
+          <span class="numerical_order">{{ index + 1 }}、</span>
           {{ item.title }}
+          <span class="item_type">{{ $t(`common.${item.type}`) }}</span>
           <span class="createTime">{{ item.createTime }}</span>
         </div>
         <div class="link"><a :href="item.link" target="_blank">{{ item.link }}</a></div>
@@ -18,7 +19,7 @@ defineOptions({ name: 'relatedArticle' })
 import { ref } from 'vue'
 const relatedArticleList = ref([])
 const getList = () => {
-  fetch(new URL('./list.json', import.meta.url).href)
+  fetch(new URL('@/assets/json/developmentSkillsAndBugList.json', import.meta.url).href)
     .then(res => res.json())
     .then(res => {
       relatedArticleList.value = res.data
@@ -28,14 +29,23 @@ getList()
 </script>
 
 <style lang="scss" scoped>
-.cell{
-  .title{
+.cell {
+  .title {
     font-weight: 600;
     font-size: 16px;
-    .numerical_order{
+
+    .numerical_order {
       font-size: 20px;
     }
-    .createTime{
+
+    .item_type {
+      font-weight: normal;
+      margin-left: 10px;
+      font-size: 14px;
+      color: #999;
+    }
+
+    .createTime {
       font-weight: normal;
       margin-left: 30px;
     }

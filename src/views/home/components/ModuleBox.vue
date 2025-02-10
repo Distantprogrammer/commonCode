@@ -25,7 +25,7 @@ const props = defineProps({
   align-items: center;
   justify-content: space-between;
   h3{
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 18.82px;
   }

@@ -16,6 +16,7 @@ import { errorRouter, staticRouter } from './modules/static-router'
  * @param meta.isFull ==> 是否全屏(示例：数据大屏页面)
  * @param meta.isAffix ==> 当前页签是否固定（固定时无法关闭）
  * @param meta.isKeepAlive ==> 当前组件是否缓存
+ * @param meta.isSubApp ==> 当前组件是否是子应用
  * */
 
 const router = createRouter({

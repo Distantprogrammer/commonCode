@@ -15,23 +15,35 @@
       }
     },
     {
-      "path": "/developmentSkills",
-      "name": "PageDevelopmentSkills",
-      "component": "/developmentSkills/index.vue",
+      "path": "/developmentSkillsAndBug",
+      "name": "PageDevelopmentSkillsAndBug",
+      "component": "/developmentSkillsAndBug/index.vue",
       "meta": {
         "icon": "Grid",
-        "title": "router.home_developmentSkills",
+        "title": "router.home_developmentSkillsAndBug",
         "isFull": false,
         "isAffix": false,
         "isKeepAlive": true
       },
       "children": [
         {
-          "path": "/developmentSkills/practicalOperation",
-          "name": "developmentSkillsPracticalOperation",
-          "component": "/developmentSkills/views/practicalOperation/index.vue",
+          "path": "/developmentSkillsAndBug/relatedArticle",
+          "name": "developmentSkillsAndBugRelatedArticle",
+          "component": "/developmentSkillsAndBug/views/RelatedArticle/index.vue",
           "meta": {
-            "icon": "Finished",
+            "icon": "",
+            "title": "router.relatedArticle",
+            "isFull": false,
+            "isAffix": false,
+            "isKeepAlive": true
+          }
+        },
+        {
+          "path": "/developmentSkillsAndBug/practicalOperation",
+          "name": "developmentSkillsAndBugPracticalOperation",
+          "component": "/developmentSkillsAndBug/views/PracticalOperation/index.vue",
+          "meta": {
+            "icon": "",
             "title": "router.practicalOperation",
             "isFull": false,
             "isAffix": false,
@@ -39,11 +51,11 @@
           },
           "children": [
             {
-              "path": "/developmentSkills/cutVideoCover",
+              "path": "/developmentSkillsAndBug/cutVideoCover",
               "name": "cutVideoCover",
-              "component": "/developmentSkills/views/practicalOperation/CutVideoCover/index.vue",
+              "component": "/developmentSkillsAndBug/views/PracticalOperation/cutVideoCover/index.vue",
               "meta": {
-                "icon": "Finished",
+                "icon": "",
                 "title": "router.cutVideoCover",
                 "isFull": false,
                 "isAffix": false,
@@ -53,7 +65,7 @@
             {
               "path": "/elInputNumberInitData",
               "name": "elInputNumberInitData",
-              "component": "/developmentSkills/views/practicalOperation/elInputNumberInitData/index.vue",
+              "component": "/developmentSkillsAndBug/views/PracticalOperation/elInputNumberInitData/index.vue",
               "redirect": "",
               "meta": {
                 "icon": "",
@@ -62,53 +74,13 @@
                 "isAffix": false,
                 "isKeepAlive": false
               }
-            }
-          ]
-        },
-        {
-          "path": "/developmentSkills/relatedArticle",
-          "name": "developmentSkillsRelatedArticle",
-          "component": "/developmentSkills/views/relatedArticle/index.vue",
-          "meta": {
-            "icon": "Finished",
-            "title": "router.relatedArticle",
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
-        }
-      ]
-    },
-    {
-      "path": "/bugs",
-      "name": "PageBugs",
-      "component": "/bugs/index.vue",
-      "meta": {
-        "icon": "Grid",
-        "title": "router.home_bugs",
-        "isFull": false,
-        "isAffix": false,
-        "isKeepAlive": true
-      },
-      "children": [
-        {
-          "path": "/bugs/practicalOperation",
-          "name": "practicalOperation",
-          "component": "/bugs/views/practicalOperation/index.vue",
-          "meta": {
-            "icon": "Finished",
-            "title": "router.practicalOperation",
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          },
-          "children": [
+            },
             {
-              "path": "/bugs/practicalOperation/vShowTemplateTwoChildNode",
+              "path": "/developmentSkillsAndBug/PracticalOperation/vShowTemplateTwoChildNode",
               "name": "vShowTemplateTwoChildNode",
-              "component": "/bugs/views/practicalOperation/vShowTemplateTwoChildNode.vue",
+              "component": "/developmentSkillsAndBug/views/PracticalOperation/vShowTemplateTwoChildNode/index.vue",
               "meta": {
-                "icon": "Finished",
+                "icon": "",
                 "title": "router.vShowTemplateTwoChildNode",
                 "isFull": false,
                 "isAffix": false,
@@ -116,18 +88,6 @@
               }
             }
           ]
-        },
-        {
-          "path": "/bugs/relatedArticle",
-          "name": "relatedArticle",
-          "component": "/bugs/views/relatedArticle/index.vue",
-          "meta": {
-            "icon": "Finished",
-            "title": "router.relatedArticle",
-            "isFull": false,
-            "isAffix": false,
-            "isKeepAlive": true
-          }
         }
       ]
     },
@@ -249,6 +209,7 @@
           "meta": {
             "icon": "",
             "title": "router.sliderCharts",
+            "isSubApp":true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -320,7 +281,7 @@
         "title": "router.subApp",
         "isFull": false,
         "isAffix": false,
-        "isKeepAlive": true
+        "isKeepAlive": false
       },
       "children": [
         {
@@ -329,6 +290,7 @@
           "meta": {
             "icon": "",
             "title": "router.subVue3",
+            "isSubApp":true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -343,6 +305,7 @@
           "meta": {
             "icon": "",
             "title": "router.subHtml",
+            "isSubApp":true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -357,6 +320,7 @@
           "meta": {
             "icon": "",
             "title": "router.subReact",
+            "isSubApp":true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,

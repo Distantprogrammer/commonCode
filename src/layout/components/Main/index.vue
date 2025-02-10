@@ -1,20 +1,22 @@
 <template>
-  <el-main style="position: relative;" class="main_content" :class="{ 'is_scroll': isScroll }">
-    <div class="view-source-btn">
-      <!-- <ViewSource></ViewSource> -->
-      <!-- <el-button class="btn">查看代码</el-button> -->
-    </div>
-    <router-view v-slot="{ Component, route }">
-      <transition appear name="fade-transform" mode="out-in">
-        <keep-alive :include="keepAliveStore.keepAliveName">
-          <component :is="Component" :key="route.path" />
-        </keep-alive>
-      </transition>
-    </router-view>
-    <div style="transform: translateY(-8%) scale(0.84);overflow: hidden;">
-      <div id="subapp-viewport"></div>
-    </div>
-  </el-main>
+  <el-scrollbar>
+    <el-main style="position: relative;" class="main_content">
+      <div class="view-source-btn">
+        <!-- <ViewSource></ViewSource> -->
+        <!-- <el-button class="btn">查看代码</el-button> -->
+      </div>
+      <router-view v-slot="{ Component, route }">
+        <transition appear name="fade-transform" mode="out-in">
+          <keep-alive :include="keepAliveStore.keepAliveName">
+            <component :is="Component" :key="route.path" />
+          </keep-alive>
+        </transition>
+      </router-view>
+      <div>
+        <div id="subapp-viewport"></div>
+      </div>
+    </el-main>
+  </el-scrollbar>
 </template>
 
 <script setup>
@@ -33,6 +35,7 @@ const isScroll = computed(() => {
 <style lang="scss" scoped>
 .main_content {
   overflow: hidden;
+
   &.is_scroll {
     overflow-y: auto;
   }

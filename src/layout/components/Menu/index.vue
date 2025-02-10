@@ -12,7 +12,6 @@
       :collapse="collapsed"
       :collapse-transition="false"
     >
-      <div class="section-title">MENU</div>
       <sidebar-item :menus="menus" />
     </el-menu>
   </el-scrollbar>

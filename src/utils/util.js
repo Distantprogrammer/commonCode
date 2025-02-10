@@ -59,3 +59,51 @@ export const getAllBreadcrumbList = (menuList, result = {}, parent = []) => {
  * @return number
  */
 export const randomNum = (min, max) => Math.floor(Math.random() * (min - max) + max)
+
+/**
+ * @description 过滤路由
+ * @param {*} sourceArr 原数据
+ * @param {*} key 路由的name
+ * @param {*} isChildren 是否返回子路由
+ * @returns
+ */
+// export const filterRouter = (sourceArr = [], key, isChildren = false) => {
+//   const arr = sourceArr.filter(item => {
+//     return item.name === key
+//   })
+//   if (isChildren) {
+//     const newArr = []
+//     arr.forEach(item => {
+//       if (item.children) newArr.push(...item.children)
+//     })
+//     return newArr
+//   }
+//   return arr
+// }
+
+export const filterRouter = (sourceArr = [], key, isChildren = false) => {
+  let result = []
+
+  const findRoutes = (routes, key) => {
+    routes.forEach(route => {
+      if (route.name === key) {
+       return result = [route]
+      } else if (route.children) {
+       return findRoutes(route.children, key)
+      }
+    })
+  }
+
+  findRoutes(sourceArr, key)
+  if (isChildren) {
+    const childrenResult = []
+    result.forEach(route => {
+      if (route.children) {
+        childrenResult.push(...route.children)
+      }
+    })
+    return childrenResult
+  }
+
+  return result
+}
