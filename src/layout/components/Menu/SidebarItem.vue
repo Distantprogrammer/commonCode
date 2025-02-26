@@ -5,7 +5,7 @@
         <el-icon v-if="subItem.meta.icon">
           <component :is="subItem.meta.icon"></component>
         </el-icon>
-        <span class="is-truncated">{{ $t(subItem.meta.title) }}</span>
+        <span class="is-truncated" :title="$t(subItem.meta.title)">{{ $t(subItem.meta.title) }}</span>
       </template>
       <sidebar-item :menus="subItem.children" />
     </el-sub-menu>
@@ -14,7 +14,7 @@
         <component :is="subItem.meta.icon"></component>
       </el-icon>
       <template #title>
-        <span class="is-truncated">{{ $t(subItem.meta.title) }}</span>
+        <span class="is-truncated" :title="$t(subItem.meta.title)">{{ $t(subItem.meta.title) }}</span>
       </template>
     </el-menu-item>
   </template>

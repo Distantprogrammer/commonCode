@@ -15,11 +15,7 @@ export default {
     bug: 'Bug',
     other: 'Other'
   },
-  type: {
-    skill: 'Skill',
-    bug: 'Bug',
-    other: 'Other'
-  },
+  type: { skill: 'Skill', bug: 'Bug', other: 'Other' },
   router: {
     home_page: 'Home',
     home_components: 'Components',
@@ -45,7 +41,8 @@ export default {
     subApp: 'subApp',
     subVue3: 'subVue3',
     subHtml: 'subHtml',
-    subReact: 'subReact'
+    subReact: 'subReact',
+    elTableAddCustomComponent: 'elTableAddCustomComponent'
   },
   language: { zh_cn: 'Chinese', en_us: 'English' },
   tags_view: {

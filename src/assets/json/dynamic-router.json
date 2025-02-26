@@ -86,6 +86,22 @@
                 "isAffix": false,
                 "isKeepAlive": true
               }
+            },
+            {
+              "path": "/elTableAddCustomComponent",
+              "name": "elTableAddCustomComponent",
+              "component": "/developmentSkillsAndBug/views/PracticalOperation/elTableAddCustomComponent/index.vue",
+              "redirect": "",
+              "meta": {
+                "icon": "",
+                "title": "router.elTableAddCustomComponent",
+                "isFull": false,
+                "isAffix": false,
+                "isKeepAlive": false,
+                "activeMenu": false,
+                "isLink": false,
+                "isHide": false
+              }
             }
           ]
         }
@@ -209,7 +225,7 @@
           "meta": {
             "icon": "",
             "title": "router.sliderCharts",
-            "isSubApp":true,
+            "isSubApp": true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -290,7 +306,7 @@
           "meta": {
             "icon": "",
             "title": "router.subVue3",
-            "isSubApp":true,
+            "isSubApp": true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -305,7 +321,7 @@
           "meta": {
             "icon": "",
             "title": "router.subHtml",
-            "isSubApp":true,
+            "isSubApp": true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
@@ -320,7 +336,7 @@
           "meta": {
             "icon": "",
             "title": "router.subReact",
-            "isSubApp":true,
+            "isSubApp": true,
             "isFull": false,
             "isAffix": false,
             "isKeepAlive": false,
