@@ -29,7 +29,7 @@
         {
           "path": "/developmentSkillsAndBug/relatedArticle",
           "name": "developmentSkillsAndBugRelatedArticle",
-          "component": "/developmentSkillsAndBug/views/RelatedArticle/index.vue",
+          "component": "/developmentSkillsAndBug/RelatedArticle/index.vue",
           "meta": {
             "icon": "",
             "title": "router.relatedArticle",
@@ -41,7 +41,7 @@
         {
           "path": "/developmentSkillsAndBug/practicalOperation",
           "name": "developmentSkillsAndBugPracticalOperation",
-          "component": "/developmentSkillsAndBug/views/PracticalOperation/index.vue",
+          "component": "/developmentSkillsAndBug/PracticalOperation/index.vue",
           "meta": {
             "icon": "",
             "title": "router.practicalOperation",
@@ -53,7 +53,7 @@
             {
               "path": "/developmentSkillsAndBug/cutVideoCover",
               "name": "cutVideoCover",
-              "component": "/developmentSkillsAndBug/views/PracticalOperation/cutVideoCover/index.vue",
+              "component": "/developmentSkillsAndBug/PracticalOperation/cutVideoCover/index.vue",
               "meta": {
                 "icon": "",
                 "title": "router.cutVideoCover",
@@ -65,7 +65,7 @@
             {
               "path": "/elInputNumberInitData",
               "name": "elInputNumberInitData",
-              "component": "/developmentSkillsAndBug/views/PracticalOperation/elInputNumberInitData/index.vue",
+              "component": "/developmentSkillsAndBug/PracticalOperation/elInputNumberInitData/index.vue",
               "redirect": "",
               "meta": {
                 "icon": "",
@@ -78,7 +78,7 @@
             {
               "path": "/developmentSkillsAndBug/PracticalOperation/vShowTemplateTwoChildNode",
               "name": "vShowTemplateTwoChildNode",
-              "component": "/developmentSkillsAndBug/views/PracticalOperation/vShowTemplateTwoChildNode/index.vue",
+              "component": "/developmentSkillsAndBug/PracticalOperation/vShowTemplateTwoChildNode/index.vue",
               "meta": {
                 "icon": "",
                 "title": "router.vShowTemplateTwoChildNode",
@@ -90,7 +90,7 @@
             {
               "path": "/elTableAddCustomComponent",
               "name": "elTableAddCustomComponent",
-              "component": "/developmentSkillsAndBug/views/PracticalOperation/elTableAddCustomComponent/index.vue",
+              "component": "/developmentSkillsAndBug/PracticalOperation/elTableAddCustomComponent/index.vue",
               "redirect": "",
               "meta": {
                 "icon": "",
@@ -122,7 +122,7 @@
         {
           "path": "/components/quickConfigurationForm",
           "name": "quickConfigurationForm",
-          "component": "/components/views/QuickConfigurationForm/index.vue",
+          "component": "/components/QuickConfigurationForm/index.vue",
           "meta": {
             "icon": "Finished",
             "title": "router.quickConfigurationForm",
@@ -134,7 +134,7 @@
             {
               "path": "/components/quickConfigurationForm/v2",
               "name": "quickConfigurationFormV2",
-              "component": "/components/views/QuickConfigurationForm/vue2/vue2.vue",
+              "component": "/components/QuickConfigurationForm/vue2/vue2.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.vue2",
@@ -146,7 +146,7 @@
             {
               "path": "/components/quickConfigurationForm/v3",
               "name": "quickConfigurationFormV3",
-              "component": "/components/views/QuickConfigurationForm/vue3/vue3.vue",
+              "component": "/components/QuickConfigurationForm/vue3/vue3.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.vue3",
@@ -160,7 +160,7 @@
         {
           "path": "/components/pdfPreview",
           "name": "pdfPreview",
-          "component": "/components/views/PdfPreview/index.vue",
+          "component": "/components/PdfPreview/index.vue",
           "meta": {
             "icon": "Finished",
             "title": "router.pdfPreview",
@@ -172,7 +172,7 @@
             {
               "path": "/components/pdfPreview/canvas",
               "name": "pdfPreviewCanvas",
-              "component": "/components/views/PdfPreview/Canvas/index.vue",
+              "component": "/components/PdfPreview/Canvas/index.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.canvas",
@@ -184,7 +184,7 @@
             {
               "path": "/components/pdfPreview/iframe",
               "name": "pdfPreviewIframe",
-              "component": "/components/views/PdfPreview/Iframe/index.vue",
+              "component": "/components/PdfPreview/Iframe/index.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.iframe",
@@ -196,7 +196,7 @@
             {
               "path": "/components/pdfPreview/html",
               "name": "pdfPreviewHtml",
-              "component": "/components/views/PdfPreview/Html/index.vue",
+              "component": "/components/PdfPreview/Html/index.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.html",
@@ -210,7 +210,7 @@
         {
           "path": "/components/pictureToText",
           "name": "pictureToText",
-          "component": "/components/views/PictureToText/index.vue",
+          "component": "/components/PictureToText/index.vue",
           "meta": {
             "icon": "Finished",
             "title": "router.pictureToText",
@@ -251,7 +251,7 @@
         {
           "path": "/functions/tableMemorySelection",
           "name": "tableMemorySelection",
-          "component": "/functions/views/TableMemorySelection/index.vue",
+          "component": "/functions/TableMemorySelection/index.vue",
           "meta": {
             "icon": "Finished",
             "title": "router.tableMemorySelection",
@@ -263,7 +263,7 @@
             {
               "path": "/functions/tableMemorySelection/v2",
               "name": "tableMemorySelectionV2",
-              "component": "/functions/views/TableMemorySelection/vue2.vue",
+              "component": "/functions/TableMemorySelection/vue2.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.vue2",
@@ -275,7 +275,7 @@
             {
               "path": "/functions/tableMemorySelection/v3",
               "name": "tableMemorySelectionV3",
-              "component": "/functions/views/TableMemorySelection/vue3.vue",
+              "component": "/functions/TableMemorySelection/vue3.vue",
               "meta": {
                 "icon": "Finished",
                 "title": "router.vue3",
