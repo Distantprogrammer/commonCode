@@ -7,10 +7,11 @@ const editorContainer = ref(null)
 const editor = ref(null)
 const editorTheme = ref('vs') // vs、vs-dark、hc-black
 const editData = ref('')
+const editorLanguage = ref('javascript')
 const editorOptions = reactive({
   value: '',
   theme: editorTheme.value, // 主题
-  language: 'javascript',
+  language: editorLanguage.value,
   folding: true, // 是否折叠
   foldingHighlight: true, // 折叠等高线
   foldingStrategy: 'indentation', // 折叠方式  auto | indentation
@@ -28,7 +29,7 @@ const editorOptions = reactive({
   readOnly: false //是否只读  取值 true | false
 })
 
-mitt.on('handleChange',handleChange)
+mitt.on('handleChange', handleChange)
 onMounted(() => {
   editor.value = monaco.editor.create(editorContainer.value, { ...editorOptions })
   // // 监听内容变化
@@ -39,13 +40,41 @@ onMounted(() => {
   //   console.log(editor.value, "监听失去焦点事件");
   // });
 })
-
+// 动态改变语言到 TypeScript 的函数
+function changeLanguage(lge) {
+  let language = lge || 'javascript'
+  const mapping = {
+    js: 'javascript',
+    ts: 'typescript',
+    md: 'markdown',
+    vue: 'html'
+  }
+  const supportedLanguages = [
+    'javascript',
+    'typescript',
+    'html',
+    'css',
+    'scss',
+    'less',
+    'markdown',
+    'json',
+    'xml',
+    'yaml',
+    'vue',
+    'tsx',
+    'jsx',
+  ]
+  if (!supportedLanguages.includes(language)) {
+    console.warn(`Unsupported language: ${language}. Defaulting to 'javascript'.`)
+    language = 'javascript'
+  }
+  monaco.editor.setModelLanguage(toRaw(editor.value).getModel(), mapping[language] || language)
+}
 // 接收文件目录地址
-function handleChange(data){
+function handleChange({ data, fileType }) {
+  changeLanguage(fileType)
   editData.value = data
-  console.log(data);
   const content = data.content
-  console.log(content);
   toRaw(editor.value).setValue(content)
 }
 
@@ -62,7 +91,6 @@ function format() {
 function handleTheme() {
   monaco.editor.setTheme('vs')
 }
-
 </script>
 
 <template>

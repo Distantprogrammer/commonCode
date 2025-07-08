@@ -8,6 +8,7 @@ const props = defineProps({
     default: () => []
   }
 })
+
 function handleFileSelect(file) {}
 </script>
 

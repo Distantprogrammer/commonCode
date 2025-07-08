@@ -12,7 +12,9 @@ const props = defineProps({
 onMounted(() => {})
 const handleNodeClick = (data, node) => {
   if (data.type !== 'file') return
-  mitt.emit('handleChange', data)
+  const fileType = data?.label.includes('.') ? data?.label.split('.').pop() : ''
+  console.log(fileType)
+  mitt.emit('handleChange', { data, fileType })
 }
 
 // 前端无法直接获取文件夹的完整路径，前端浏览器环境受到安全限制，无法直接访问文件系统的路径信息。
@@ -39,9 +41,9 @@ const loadNode = async (node, resolve) => {
         @node-click="handleNodeClick"
       >
         <template #default="{ node, data }">
-          <span>
+          <span style="display: flex; align-items: center; gap: 5px">
             <!-- <i class="el-icon-folder"></i> -->
-            <img :src="data.icon" alt="" v-if="data.icon" />
+            <img v-if="data.fileIcon" :src="data.fileIcon" style="width: 16px; height: 16px" />
             <el-icon v-else-if="data.type === 'folder'" :size="16">
               <FolderOpened v-if="node.expanded" />
               <Folder v-else />
@@ -55,8 +57,6 @@ const loadNode = async (node, resolve) => {
 </template>
 
 <style lang="scss" scoped>
-// $background-color: #252526;
-// $hover-background-color: #37373d;
 $background-color: #fcfcfc;
 $hover-background-color: #d3d3d8;
 .file_catalog_box {
@@ -74,19 +74,19 @@ $hover-background-color: #d3d3d8;
   }
 
   &::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     background-color: background-color;
   }
 
   &::-webkit-scrollbar-thumb {
     display: none;
-    background: #464647;
+    background: #a7a7a8;
   }
 
   &:hover {
     &::-webkit-scrollbar-thumb {
       display: block;
-      background-color: #464647;
+      background-color: #a7a7a8;
     }
   }
 }
@@ -94,20 +94,11 @@ $hover-background-color: #d3d3d8;
 :deep(.el-tree) {
   --el-tree-node-hover-bg-color: transparent;
   background-color: transparent !important;
-  .el-tree-node:focus > .el-tree-node__content {
-    background-color: #04395e !important;
-    outline: 1px solid #007fd4;
-    outline-offset: -1px;
-  }
   .el-tree-node__content {
     background-color: transparent;
     &:hover {
       background-color: $hover-background-color !important;
     }
-
-    // .el-tree-node__expand-icon {
-    //   // display: none;
-    // }
   }
 
   // 解决无children的子级也会出现下拉箭头

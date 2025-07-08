@@ -70,6 +70,7 @@ function getFileTree(dirPath, basePath = dirPath) {
     if (needToRead.includes(ext)) {
       return {
         label: label,
+
         type: checkFileType(stats),
         location: relativePath,
         content: fs.readFileSync(dirPath, 'utf-8')
@@ -77,6 +78,7 @@ function getFileTree(dirPath, basePath = dirPath) {
     } else {
       return {
         label: label,
+
         type: checkFileType(stats),
         location: relativePath
       }

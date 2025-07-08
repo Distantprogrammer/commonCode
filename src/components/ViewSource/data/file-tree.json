@@ -3,19 +3,19 @@
     "label": "src",
     "location": "src",
     "type": "folder",
-    "id": "696a3c7d-07ac-4df3-89bc-c6b8ec0ea235",
+    "id": "d1807d1a-99fa-4365-9832-938e3ba19e04",
     "children": [
       {
         "label": "api",
         "location": "api",
         "type": "folder",
-        "id": "c9ef676f-4f18-49fe-bdc6-43f66b58a96f",
+        "id": "a213c179-de3e-4569-ba67-f75ba6f36602",
         "children": [
           {
             "label": "home",
             "location": "api\\home",
             "type": "folder",
-            "id": "354b67f1-27f5-4c05-8b3e-32cb0cbcacd4",
+            "id": "8463e41a-3932-47ee-9056-c5e3d393be79",
             "children": [
               {
                 "label": "index.js",
@@ -33,13 +33,122 @@
         "label": "assets",
         "location": "assets",
         "type": "folder",
-        "id": "2f9e7ab8-b3a9-4204-9047-d25b7d3b1498",
+        "id": "16bffd52-ccb3-43fb-a1f3-883a81fe1e71",
         "children": [
+          {
+            "label": "icon",
+            "location": "assets\\icon",
+            "type": "folder",
+            "id": "cbc25975-1dad-49d1-8a25-5b7618cb59bf",
+            "children": [
+              {
+                "label": "default_file.svg",
+                "type": "file",
+                "location": "assets\\icon\\default_file.svg"
+              },
+              {
+                "label": "default_folder.svg",
+                "type": "file",
+                "location": "assets\\icon\\default_folder.svg"
+              },
+              {
+                "label": "default_folder_opened.svg",
+                "type": "file",
+                "location": "assets\\icon\\default_folder_opened.svg"
+              },
+              {
+                "label": "file_type_bat.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_bat.svg"
+              },
+              {
+                "label": "file_type_css.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_css.svg"
+              },
+              {
+                "label": "file_type_db.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_db.svg"
+              },
+              {
+                "label": "file_type_font.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_font.svg"
+              },
+              {
+                "label": "file_type_git.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_git.svg"
+              },
+              {
+                "label": "file_type_html.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_html.svg"
+              },
+              {
+                "label": "file_type_image.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_image.svg"
+              },
+              {
+                "label": "file_type_java.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_java.svg"
+              },
+              {
+                "label": "file_type_js.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_js.svg"
+              },
+              {
+                "label": "file_type_less.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_less.svg"
+              },
+              {
+                "label": "file_type_reactjs.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_reactjs.svg"
+              },
+              {
+                "label": "file_type_scss.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_scss.svg"
+              },
+              {
+                "label": "file_type_svg.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_svg.svg"
+              },
+              {
+                "label": "file_type_tsconfig.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_tsconfig.svg"
+              },
+              {
+                "label": "file_type_vite.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_vite.svg"
+              },
+              {
+                "label": "file_type_vue.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_vue.svg"
+              },
+              {
+                "label": "file_type_vueconfig.svg",
+                "type": "file",
+                "location": "assets\\icon\\file_type_vueconfig.svg"
+              }
+            ],
+            "leaf": true
+          },
           {
             "label": "images",
             "location": "assets\\images",
             "type": "folder",
-            "id": "18d50c30-11f8-4959-83c7-667161d9d2fb",
+            "id": "d99fca20-d1ba-4666-a0da-455f8081cbe4",
             "children": [
               {
                 "label": "403.png",
@@ -78,7 +187,7 @@
             "label": "json",
             "location": "assets\\json",
             "type": "folder",
-            "id": "e91c25c2-2715-4cc9-afbd-956ab23b0d5f",
+            "id": "9ebd9a79-ec46-4fe9-86f6-d894d88f01e2",
             "children": [
               {
                 "label": "developmentSkillsAndBugList.json",
@@ -105,7 +214,7 @@
             "label": "lib",
             "location": "assets\\lib",
             "type": "folder",
-            "id": "0ec2e74f-db14-4caa-a1ca-05d62d01a85c",
+            "id": "5af7b69b-76f2-4779-b672-d6dd0f3aa86f",
             "children": [
               {
                 "label": "big_buck_bunny.mp4",
@@ -119,13 +228,13 @@
             "label": "styles",
             "location": "assets\\styles",
             "type": "folder",
-            "id": "a05d8b16-aa1f-47cd-a4a6-a2c79b4a86bd",
+            "id": "9be4f65a-d902-41da-96f4-68c00b6aaeac",
             "children": [
               {
                 "label": "customize",
                 "location": "assets\\styles\\customize",
                 "type": "folder",
-                "id": "3ab40b33-3ae3-4950-bd38-5c0ad250e337",
+                "id": "c2333ed8-1168-447f-8698-75b7f99680e2",
                 "children": [
                   {
                     "label": "dark.scss",
@@ -140,7 +249,7 @@
                 "label": "element",
                 "location": "assets\\styles\\element",
                 "type": "folder",
-                "id": "a794902e-65fc-4989-83b7-0e2b27cf2ca7",
+                "id": "a70536da-8c20-46d0-9471-c4d459b6153a",
                 "children": [
                   {
                     "label": "dark.scss",
@@ -206,7 +315,7 @@
             "label": "svg-icons",
             "location": "assets\\svg-icons",
             "type": "folder",
-            "id": "a4df7e4d-71cf-4142-859b-66eed6133052",
+            "id": "1e80f119-9fda-4d87-a971-bba13281bedc",
             "children": [
               {
                 "label": "clean.svg",
@@ -273,13 +382,13 @@
         "label": "components",
         "location": "components",
         "type": "folder",
-        "id": "38ae78b7-81a3-42b7-b8ea-1ab218b71ee5",
+        "id": "5e5ad323-289a-4b2a-84fb-e18cefb4a51c",
         "children": [
           {
             "label": "Pagination",
             "location": "components\\Pagination",
             "type": "folder",
-            "id": "785c66f1-a55b-4551-960d-7393a7fef360",
+            "id": "91fa6cbf-e240-47f0-8879-26860f4cafb1",
             "children": [
               {
                 "label": "index.vue",
@@ -294,7 +403,7 @@
             "label": "SvgIcon",
             "location": "components\\SvgIcon",
             "type": "folder",
-            "id": "09356682-0b8f-4c55-945a-459da8710107",
+            "id": "dfa24d9e-c254-4404-8d7f-493b13bcda0f",
             "children": [
               {
                 "label": "index.vue",
@@ -309,7 +418,7 @@
             "label": "Upload",
             "location": "components\\Upload",
             "type": "folder",
-            "id": "77bea1d1-08f2-4025-ab32-85ea198b83b5",
+            "id": "b42019c9-5dba-4070-84f8-3f46b8bd1e6a",
             "children": [
               {
                 "label": "index.vue",
@@ -324,19 +433,19 @@
             "label": "ViewSource",
             "location": "components\\ViewSource",
             "type": "folder",
-            "id": "ba6108dc-62d4-4801-995f-429cf6e31d23",
+            "id": "18cdba53-42d4-4d2c-9870-45ab212f6cd9",
             "children": [
               {
                 "label": "FileCatalog",
                 "location": "components\\ViewSource\\FileCatalog",
                 "type": "folder",
-                "id": "6e372903-59e0-46fb-8365-74880c0f70ed",
+                "id": "f721b3b5-c62d-4a9e-a2ce-b754fc4e334c",
                 "children": [
                   {
                     "label": "index.vue",
                     "type": "file",
                     "location": "components\\ViewSource\\FileCatalog\\index.vue",
-                    "content": "<script setup>\r\nimport { Folder, FolderOpened } from '@element-plus/icons'\r\nimport { onMounted, reactive } from 'vue'\r\nimport mitt from '@/utils/mitt.js'\r\nconst defaultProps = { children: 'children', label: 'label' }\r\nconst props = defineProps({\r\n  treeData: {\r\n    type: Object,\r\n    default: () => []\r\n  }\r\n})\r\nonMounted(() => {})\r\nconst handleNodeClick = (data, node) => {\r\n  if (data.type !== 'file') return\r\n  mitt.emit('handleChange', data)\r\n}\r\n\r\n// 前端无法直接获取文件夹的完整路径，前端浏览器环境受到安全限制，无法直接访问文件系统的路径信息。\r\n// 可以使用桌面应用程序或与操作系统的集成来实现 这样的解决方案通常需要借助Electron、NW.js等桌面应用程序开发框架来实现。\r\nconst loadNode = async (node, resolve) => {\r\n  // console.log(node);\r\n  // if (node.level === 0) {\r\n  //  const res = await getFileList(\"B:\\\\tsg\\\\qiankun\\\\qiankun-example\\\\server\")\r\n  //  return resolve(res)\r\n  // }\r\n  // if (node.level > 1) return resolve([])\r\n  // // const res = await getFileList(node.data.location)\r\n  // return resolve(node.data.children)\r\n}\r\n</script>\r\n\r\n<template>\r\n  <div class=\"file_catalog_box\">\r\n    <div class=\"file_catalog\">\r\n      <el-tree\r\n        :data=\"props.treeData\"\r\n        :indent=\"5\"\r\n        :props=\"defaultProps\"\r\n        @node-click=\"handleNodeClick\"\r\n      >\r\n        <template #default=\"{ node, data }\">\r\n          <span>\r\n            <!-- <i class=\"el-icon-folder\"></i> -->\r\n            <el-icon v-if=\"data.type === 'folder'\" :size=\"16\">\r\n              <FolderOpened v-if=\"node.expanded\" />\r\n              <Folder v-else />\r\n            </el-icon>\r\n            {{ node.label }}\r\n          </span>\r\n        </template>\r\n      </el-tree>\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n// $background-color: #252526;\r\n// $hover-background-color: #37373d;\r\n$background-color: #fcfcfc;\r\n$hover-background-color: #d3d3d8;\r\n.file_catalog_box {\r\n  color: #000;\r\n  height: 100%;\r\n  overflow-y: scroll;\r\n  overflow-x: hidden;\r\n  background-color: $background-color;\r\n  .file_catalog {\r\n    width: 300px;\r\n    background-color: $background-color;\r\n  }\r\n  &::-webkit-scrollbar-thumb {\r\n    background-color: transparent;\r\n  }\r\n\r\n  &::-webkit-scrollbar {\r\n    width: 10px;\r\n    background-color: background-color;\r\n  }\r\n\r\n  &::-webkit-scrollbar-thumb {\r\n    display: none;\r\n    background: #464647;\r\n  }\r\n\r\n  &:hover {\r\n    &::-webkit-scrollbar-thumb {\r\n      display: block;\r\n      background-color: #464647;\r\n    }\r\n  }\r\n}\r\n\r\n:deep(.el-tree) {\r\n  --el-tree-node-hover-bg-color: transparent;\r\n  background-color: transparent !important;\r\n  .el-tree-node:focus > .el-tree-node__content {\r\n    background-color: #04395e !important;\r\n    outline: 1px solid #007fd4;\r\n    outline-offset: -1px;\r\n  }\r\n  .el-tree-node__content {\r\n    background-color: transparent;\r\n    &:hover {\r\n      background-color: $hover-background-color !important;\r\n    }\r\n\r\n    // .el-tree-node__expand-icon {\r\n    //   // display: none;\r\n    // }\r\n  }\r\n\r\n  // 解决无children的子级也会出现下拉箭头\r\n  .el-tree-node__expand-icon.is-leaf {\r\n    visibility: hidden;\r\n  }\r\n}\r\n</style>\r\n"
+                    "content": "<script setup>\r\nimport { Folder, FolderOpened } from '@element-plus/icons'\r\nimport { onMounted, reactive } from 'vue'\r\nimport mitt from '@/utils/mitt.js'\r\nconst defaultProps = { children: 'children', label: 'label' }\r\nconst props = defineProps({\r\n  treeData: {\r\n    type: Object,\r\n    default: () => []\r\n  }\r\n})\r\nonMounted(() => {})\r\nconst handleNodeClick = (data, node) => {\r\n  if (data.type !== 'file') return\r\n  mitt.emit('handleChange', data)\r\n}\r\n\r\n// 前端无法直接获取文件夹的完整路径，前端浏览器环境受到安全限制，无法直接访问文件系统的路径信息。\r\n// 可以使用桌面应用程序或与操作系统的集成来实现 这样的解决方案通常需要借助Electron、NW.js等桌面应用程序开发框架来实现。\r\nconst loadNode = async (node, resolve) => {\r\n  // console.log(node);\r\n  // if (node.level === 0) {\r\n  //  const res = await getFileList(\"B:\\\\tsg\\\\qiankun\\\\qiankun-example\\\\server\")\r\n  //  return resolve(res)\r\n  // }\r\n  // if (node.level > 1) return resolve([])\r\n  // // const res = await getFileList(node.data.location)\r\n  // return resolve(node.data.children)\r\n}\r\n</script>\r\n\r\n<template>\r\n  <div class=\"file_catalog_box\">\r\n    <div class=\"file_catalog\">\r\n      <el-tree\r\n        :data=\"props.treeData\"\r\n        :indent=\"5\"\r\n        :props=\"defaultProps\"\r\n        @node-click=\"handleNodeClick\"\r\n      >\r\n        <template #default=\"{ node, data }\">\r\n          <span>\r\n            <!-- <i class=\"el-icon-folder\"></i> -->\r\n             {{ data.fileIcon }}\r\n            <img :src=\"data.fileIcon\" alt=\"\" v-if=\"data.fileIcon\" />\r\n            <el-icon v-else-if=\"data.type === 'folder'\" :size=\"16\">\r\n              <FolderOpened v-if=\"node.expanded\" />\r\n              <Folder v-else />\r\n            </el-icon>\r\n            {{ node.label }}\r\n          </span>\r\n        </template>\r\n      </el-tree>\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n// $background-color: #252526;\r\n// $hover-background-color: #37373d;\r\n$background-color: #fcfcfc;\r\n$hover-background-color: #d3d3d8;\r\n.file_catalog_box {\r\n  color: #000;\r\n  height: 100%;\r\n  overflow-y: scroll;\r\n  overflow-x: hidden;\r\n  background-color: $background-color;\r\n  .file_catalog {\r\n    width: 300px;\r\n    background-color: $background-color;\r\n  }\r\n  &::-webkit-scrollbar-thumb {\r\n    background-color: transparent;\r\n  }\r\n\r\n  &::-webkit-scrollbar {\r\n    width: 10px;\r\n    background-color: background-color;\r\n  }\r\n\r\n  &::-webkit-scrollbar-thumb {\r\n    display: none;\r\n    background: #464647;\r\n  }\r\n\r\n  &:hover {\r\n    &::-webkit-scrollbar-thumb {\r\n      display: block;\r\n      background-color: #464647;\r\n    }\r\n  }\r\n}\r\n\r\n:deep(.el-tree) {\r\n  --el-tree-node-hover-bg-color: transparent;\r\n  background-color: transparent !important;\r\n  .el-tree-node:focus > .el-tree-node__content {\r\n    background-color: #04395e !important;\r\n    outline: 1px solid #007fd4;\r\n    outline-offset: -1px;\r\n  }\r\n  .el-tree-node__content {\r\n    background-color: transparent;\r\n    &:hover {\r\n      background-color: $hover-background-color !important;\r\n    }\r\n\r\n    // .el-tree-node__expand-icon {\r\n    //   // display: none;\r\n    // }\r\n  }\r\n\r\n  // 解决无children的子级也会出现下拉箭头\r\n  .el-tree-node__expand-icon.is-leaf {\r\n    visibility: hidden;\r\n  }\r\n}\r\n</style>\r\n"
                   }
                 ],
                 "leaf": true
@@ -345,7 +454,7 @@
                 "label": "MonacoEditor",
                 "location": "components\\ViewSource\\MonacoEditor",
                 "type": "folder",
-                "id": "a60c478a-2a65-42fe-bc64-8434558d6f9d",
+                "id": "95832fd3-40bc-4c6d-8530-1882e2628655",
                 "children": [
                   {
                     "label": "index.vue",
@@ -360,7 +469,7 @@
                 "label": "data",
                 "location": "components\\ViewSource\\data",
                 "type": "folder",
-                "id": "c64dd78c-9129-459d-b142-0bc2a7ea7398",
+                "id": "3dc0bc3c-186e-454d-8534-54c06ce80004",
                 "children": [
                   {
                     "label": "file-tree.json",
@@ -375,7 +484,7 @@
                 "label": "index.vue",
                 "type": "file",
                 "location": "components\\ViewSource\\index.vue",
-                "content": "<script setup>\r\nimport { ref } from 'vue'\r\nimport FileCatalog from './FileCatalog/index.vue'\r\nimport MonacoEditor from './MonacoEditor/index.vue'\r\nconst props = defineProps({\r\n  treeData: {\r\n    type: Object,\r\n    default: () => []\r\n  }\r\n})\r\nfunction handleFileSelect(file) {}\r\n</script>\r\n\r\n<template>\r\n  <div class=\"home\">\r\n    <div class=\"file_catalog\">\r\n      <FileCatalog @file-select=\"handleFileSelect\" :tree-data=\"props.treeData\" />\r\n    </div>\r\n    <div class=\"monaco_editor\">\r\n      <MonacoEditor />\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n.home {\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n.file_catalog {\r\n  display: flex;\r\n}\r\n.monaco_editor {\r\n  flex: 1;\r\n  height: 100%;\r\n}\r\n</style>\r\n"
+                "content": "<script setup>\r\nimport { ref } from 'vue'\r\nimport FileCatalog from './FileCatalog/index.vue'\r\nimport MonacoEditor from './MonacoEditor/index.vue'\r\nconst props = defineProps({\r\n  treeData: {\r\n    type: Object,\r\n    default: () => []\r\n  }\r\n})\r\n\r\nfunction handleFileSelect(file) {}\r\n</script>\r\n\r\n<template>\r\n  <div class=\"home\">\r\n    <div class=\"file_catalog\">\r\n      <FileCatalog @file-select=\"handleFileSelect\" :tree-data=\"props.treeData\" />\r\n    </div>\r\n    <div class=\"monaco_editor\">\r\n      <MonacoEditor />\r\n    </div>\r\n  </div>\r\n</template>\r\n\r\n<style lang=\"scss\" scoped>\r\n.home {\r\n  display: flex;\r\n  width: 100%;\r\n  height: 100%;\r\n}\r\n.file_catalog {\r\n  display: flex;\r\n}\r\n.monaco_editor {\r\n  flex: 1;\r\n  height: 100%;\r\n}\r\n</style>\r\n"
               }
             ],
             "leaf": true
@@ -387,7 +496,7 @@
         "label": "config",
         "location": "config",
         "type": "folder",
-        "id": "e2647db0-5ecf-46b5-a5aa-9fd120ff5916",
+        "id": "b3d44fb0-a674-43c4-a6f5-bfe8f82bcf4b",
         "children": [
           {
             "label": "error-code.js",
@@ -402,7 +511,7 @@
         "label": "hooks",
         "location": "hooks",
         "type": "folder",
-        "id": "d03b48a5-b78d-4235-a6cf-7005c9381268",
+        "id": "e1f6c251-5bff-4b37-bf27-bb335eda9a54",
         "children": [
           {
             "label": "use-client-size.js",
@@ -423,25 +532,25 @@
         "label": "layout",
         "location": "layout",
         "type": "folder",
-        "id": "c59ad6f7-0b5d-4d3b-a597-53680f5b1d63",
+        "id": "98070faf-481f-4393-b985-9750b7b68e2e",
         "children": [
           {
             "label": "components",
             "location": "layout\\components",
             "type": "folder",
-            "id": "29d3e660-a562-4c9e-8f49-a5d9446caebe",
+            "id": "35c2e54f-dc8b-4a7c-ba9a-6b0a2a15886a",
             "children": [
               {
                 "label": "Aside",
                 "location": "layout\\components\\Aside",
                 "type": "folder",
-                "id": "65b259f0-e4a1-4acd-9054-9f8003981b68",
+                "id": "80ec8c72-465c-4e0e-9d58-6e09cb30d08b",
                 "children": [
                   {
                     "label": "components",
                     "location": "layout\\components\\Aside\\components",
                     "type": "folder",
-                    "id": "e1416171-6ecb-468f-8eea-499a58bbcbd5",
+                    "id": "899eae25-41e6-40f7-9abb-a5d81a6fc903",
                     "children": [
                       {
                         "label": "Logo.vue",
@@ -465,13 +574,13 @@
                 "label": "Header",
                 "location": "layout\\components\\Header",
                 "type": "folder",
-                "id": "a7168691-05d2-494b-a8ec-28ccf1faf3a3",
+                "id": "11c0673e-03b2-4345-8e9b-25210536f9b2",
                 "children": [
                   {
                     "label": "components",
                     "location": "layout\\components\\Header\\components",
                     "type": "folder",
-                    "id": "709ebc19-179c-45f0-8ad5-a70ca0ab5539",
+                    "id": "db43fde1-5953-4f73-9833-4e7ba47c81b9",
                     "children": [
                       {
                         "label": "Breadcrumb.vue",
@@ -561,13 +670,13 @@
                 "label": "Main",
                 "location": "layout\\components\\Main",
                 "type": "folder",
-                "id": "e56005f5-3c46-4f45-bd19-f62cb4b86267",
+                "id": "4b6e535a-82a6-48af-8c93-05d04ba5751a",
                 "children": [
                   {
                     "label": "index.vue",
                     "type": "file",
                     "location": "layout\\components\\Main\\index.vue",
-                    "content": "<template>\r\n  <el-scrollbar>\r\n    <el-main style=\"position: relative\" class=\"main_content\">\r\n      <div class=\"view-source-btn\">\r\n        <el-button class=\"btn\" @click=\"showViewSourceDialog = true\">查看代码</el-button>\r\n      </div>\r\n      <router-view v-slot=\"{ Component, route }\">\r\n        <transition appear name=\"fade-transform\" mode=\"out-in\">\r\n          <keep-alive :include=\"keepAliveStore.keepAliveName\">\r\n            <component :is=\"Component\" :key=\"route.path\" />\r\n          </keep-alive>\r\n        </transition>\r\n      </router-view>\r\n      <div>\r\n        <div id=\"subapp-viewport\"></div>\r\n      </div>\r\n      <el-dialog\r\n        v-model=\"showViewSourceDialog\"\r\n        class=\"no-padding-dialog\"\r\n        fullscreen\r\n        :close-on-click-modal=\"false\"\r\n        :destroy-on-close=\"false\"\r\n      >\r\n        <el-icon color=\"#000\" class=\"close-icon\">\r\n          <Close @click=\"showViewSourceDialog = false\" />\r\n        </el-icon>\r\n        <ViewSource :tree-data=\"treeData\" />\r\n      </el-dialog>\r\n    </el-main>\r\n  </el-scrollbar>\r\n</template>\r\n\r\n<script setup>\r\nimport useKeepAliveStore from '@/stores/modules/keep-alive'\r\nimport ViewSource from '@/components/ViewSource/index.vue'\r\nimport { Close } from '@element-plus/icons'\r\nimport { computed, ref, onMounted } from 'vue'\r\nimport { useRoute } from 'vue-router'\r\nconst route = useRoute()\r\ndefineOptions({ name: 'AppLayoutMain' })\r\n\r\nconst keepAliveStore = useKeepAliveStore()\r\nconst isScroll = computed(() => {\r\n  return !(route?.meta?.overflow === 'hidden')\r\n})\r\nconst showViewSourceDialog = ref(false)\r\n\r\nconst treeData = ref([])\r\n\r\nonMounted(async () => {\r\n  // 读取本地 file-tree.json\r\n  const res = await fetch(\r\n    new URL('@/components/ViewSource/data/file-tree.json', import.meta.url).href\r\n  )\r\n  console.log(route);\r\n  treeData.value = await res.json()\r\n})\r\n</script>\r\n<style lang=\"scss\" scoped>\r\n.main_content {\r\n  overflow: hidden;\r\n\r\n  &.is_scroll {\r\n    overflow-y: auto;\r\n  }\r\n}\r\n\r\n.view-source-btn {\r\n  position: absolute;\r\n  top: 15px;\r\n  right: 15px;\r\n\r\n  .btn {\r\n    background: transparent;\r\n    color: #000;\r\n    font-weight: 800;\r\n  }\r\n}\r\n\r\n:deep(.no-padding-dialog) {\r\n  padding: 0;\r\n  .el-dialog__header {\r\n    display: none;\r\n  }\r\n  .el-dialog__footer {\r\n    display: none;\r\n  }\r\n  .el-dialog__body {\r\n    padding: 16px;\r\n    padding-top: 25px;\r\n    height: 100%;\r\n  }\r\n}\r\n\r\n.close-icon {\r\n  position: absolute;\r\n  top: 5px;\r\n  right: 15px;\r\n  font-size: 20px;\r\n  z-index: 999;\r\n  cursor: pointer;\r\n}\r\n</style>\r\n"
+                    "content": "<template>\r\n  <el-scrollbar>\r\n    <el-main style=\"position: relative\" class=\"main_content\">\r\n      <div class=\"view-source-btn\">\r\n        <el-button class=\"btn\" @click=\"showViewSourceDialog = true\">查看代码</el-button>\r\n      </div>\r\n      <router-view v-slot=\"{ Component, route }\">\r\n        <transition appear name=\"fade-transform\" mode=\"out-in\">\r\n          <keep-alive :include=\"keepAliveStore.keepAliveName\">\r\n            <component :is=\"Component\" :key=\"route.path\" />\r\n          </keep-alive>\r\n        </transition>\r\n      </router-view>\r\n      <div>\r\n        <div id=\"subapp-viewport\"></div>\r\n      </div>\r\n      <el-dialog\r\n        v-model=\"showViewSourceDialog\"\r\n        class=\"no-padding-dialog\"\r\n        fullscreen\r\n        :close-on-click-modal=\"false\"\r\n        :destroy-on-close=\"false\"\r\n      >\r\n        <el-icon color=\"#000\" class=\"close-icon\">\r\n          <Close @click=\"showViewSourceDialog = false\" />\r\n        </el-icon>\r\n        <ViewSource :tree-data=\"treeData\" />\r\n      </el-dialog>\r\n    </el-main>\r\n  </el-scrollbar>\r\n</template>\r\n\r\n<script setup>\r\nimport useKeepAliveStore from '@/stores/modules/keep-alive'\r\nimport ViewSource from '@/components/ViewSource/index.vue'\r\nimport { Close } from '@element-plus/icons'\r\nimport { computed, ref, onMounted } from 'vue'\r\nimport { useRoute } from 'vue-router'\r\nconst route = useRoute()\r\ndefineOptions({ name: 'AppLayoutMain' })\r\n\r\nconst keepAliveStore = useKeepAliveStore()\r\nconst isScroll = computed(() => {\r\n  return !(route?.meta?.overflow === 'hidden')\r\n})\r\nconst showViewSourceDialog = ref(false)\r\n\r\nconst treeData = ref([])\r\nconst viewsData = ref([])\r\nonMounted(async () => {\r\n  // 读取本地 file-tree.json\r\n  const res = await fetch(\r\n    new URL('@/components/ViewSource/data/file-tree.json', import.meta.url).href\r\n  )\r\n  console.log(route)\r\n  treeData.value = await res.json()\r\n\r\n  treeData.value.forEach(item => {\r\n    const label = item.label || ''\r\n    const fileType = label.includes('.') ? label.split('.').at(-1) : ''\r\n    item.fileIcon = fileType ? new URL(`@/src/assets/icons/file_type_${fileType}.svg`, import.meta.url).href : ''\r\n    console.log(item.fileIcon)\r\n  })\r\n  // viewsData.value = treeData.value.filter(item => item.type === 'file')\r\n})\r\n</script>\r\n<style lang=\"scss\" scoped>\r\n.main_content {\r\n  overflow: hidden;\r\n\r\n  &.is_scroll {\r\n    overflow-y: auto;\r\n  }\r\n}\r\n\r\n.view-source-btn {\r\n  position: absolute;\r\n  top: 15px;\r\n  right: 15px;\r\n\r\n  .btn {\r\n    background: transparent;\r\n    color: #000;\r\n    font-weight: 800;\r\n  }\r\n}\r\n\r\n:deep(.no-padding-dialog) {\r\n  padding: 0;\r\n  .el-dialog__header {\r\n    display: none;\r\n  }\r\n  .el-dialog__footer {\r\n    display: none;\r\n  }\r\n  .el-dialog__body {\r\n    padding: 16px;\r\n    padding-top: 25px;\r\n    height: 100%;\r\n  }\r\n}\r\n\r\n.close-icon {\r\n  position: absolute;\r\n  top: 5px;\r\n  right: 15px;\r\n  font-size: 20px;\r\n  z-index: 999;\r\n  cursor: pointer;\r\n}\r\n</style>\r\n"
                   }
                 ],
                 "leaf": true
@@ -576,7 +685,7 @@
                 "label": "Menu",
                 "location": "layout\\components\\Menu",
                 "type": "folder",
-                "id": "26674fe4-338f-47cb-a609-61c2116eba7f",
+                "id": "ff459a33-ec98-46fb-893d-a9bd330be358",
                 "children": [
                   {
                     "label": "SidebarItem.vue",
@@ -609,19 +718,19 @@
         "label": "plugins",
         "location": "plugins",
         "type": "folder",
-        "id": "37a308ed-f266-4d77-bc4b-3c16b68a28b5",
+        "id": "03e9927f-e9b7-488e-a405-356f1d935373",
         "children": [
           {
             "label": "use-languages",
             "location": "plugins\\use-languages",
             "type": "folder",
-            "id": "fee279ec-081a-452c-a2eb-f6725bbd7db3",
+            "id": "20f23876-e19f-4dfa-816e-8bb017aaac25",
             "children": [
               {
                 "label": "modules",
                 "location": "plugins\\use-languages\\modules",
                 "type": "folder",
-                "id": "84d52be3-be35-460a-92f3-175070259e3f",
+                "id": "9a5085e1-cf70-4dbc-af3f-dc0faf8e2036",
                 "children": [
                   {
                     "label": "en-US copy.js",
@@ -684,13 +793,13 @@
         "label": "router",
         "location": "router",
         "type": "folder",
-        "id": "9e1037bf-2cd9-462b-82d3-e90daecc23cd",
+        "id": "db653157-7921-4a97-badf-7510bae957ef",
         "children": [
           {
             "label": "modules",
             "location": "router\\modules",
             "type": "folder",
-            "id": "79e620e4-f99b-43fd-93f6-a25ec650066f",
+            "id": "636d449b-1366-447d-8e19-185dfc7e4fa5",
             "children": [
               {
                 "label": "dynamic-router.js",
@@ -720,13 +829,13 @@
         "label": "stores",
         "location": "stores",
         "type": "folder",
-        "id": "770db500-bea4-47ec-b09e-3efbf524aaf0",
+        "id": "8622c334-f13d-4aff-9ccf-8338b9975265",
         "children": [
           {
             "label": "modules",
             "location": "stores\\modules",
             "type": "folder",
-            "id": "669e4657-615a-4cf2-8732-f0f6b9967dab",
+            "id": "e33b71e3-409a-4c7d-9f09-276c969159c2",
             "children": [
               {
                 "label": "app.js",
@@ -780,13 +889,13 @@
         "label": "utils",
         "location": "utils",
         "type": "folder",
-        "id": "f6a74200-ed91-49c5-861c-7da128423adc",
+        "id": "2ac12a85-d8cb-469f-9e39-099f1da24e83",
         "children": [
           {
             "label": "is",
             "location": "utils\\is",
             "type": "folder",
-            "id": "a1fc9cb4-160c-4dbe-a5c6-078f0456b053",
+            "id": "637012c7-b7ea-409f-b457-8b81a19ac135",
             "children": [
               {
                 "label": "index.js",
@@ -852,25 +961,25 @@
         "label": "views",
         "location": "views",
         "type": "folder",
-        "id": "8f113311-52f5-4dc6-b3e0-b8e4f57a0f0f",
+        "id": "ec66d929-9171-420f-86d7-1202a2728e1c",
         "children": [
           {
             "label": "components",
             "location": "views\\components",
             "type": "folder",
-            "id": "16fab556-23e8-4642-8d15-d3569494d800",
+            "id": "0b03fb93-f2d1-41e1-a059-17bd9721f491",
             "children": [
               {
                 "label": "PdfPreview",
                 "location": "views\\components\\PdfPreview",
                 "type": "folder",
-                "id": "274b3347-d622-4b7e-8004-770246b389af",
+                "id": "d0995489-806b-437e-a9d8-c23029a89517",
                 "children": [
                   {
                     "label": "Canvas",
                     "location": "views\\components\\PdfPreview\\Canvas",
                     "type": "folder",
-                    "id": "43c2c6dc-2c07-4b8d-bc5e-85c6bfffa459",
+                    "id": "1d716bcb-6a2c-417e-b87e-4807c1091e1a",
                     "children": [
                       {
                         "label": "index.vue",
@@ -897,7 +1006,7 @@
                     "label": "Html",
                     "location": "views\\components\\PdfPreview\\Html",
                     "type": "folder",
-                    "id": "cc68b83d-5413-4775-8a3e-4207a6b1d9cd",
+                    "id": "5b3b7553-2d5a-4e35-8214-fa4ec0270a1f",
                     "children": [
                       {
                         "label": "index.html",
@@ -918,7 +1027,7 @@
                     "label": "Iframe",
                     "location": "views\\components\\PdfPreview\\Iframe",
                     "type": "folder",
-                    "id": "2b034827-627d-4152-b5ee-7245480594c9",
+                    "id": "0fae980a-efab-468c-b252-20c9557113c6",
                     "children": [
                       {
                         "label": "index.vue",
@@ -933,7 +1042,7 @@
                     "label": "lib",
                     "location": "views\\components\\PdfPreview\\lib",
                     "type": "folder",
-                    "id": "adaaedf8-0a46-4172-9ac7-48f1108f85d8",
+                    "id": "82f8ae21-eacc-4ca1-bb13-2b802071a6ae",
                     "children": [
                       {
                         "label": "2to4.png",
@@ -971,13 +1080,13 @@
                 "label": "PictureToText",
                 "location": "views\\components\\PictureToText",
                 "type": "folder",
-                "id": "ab171c1c-3ab4-4d9d-85c3-6509673158b1",
+                "id": "f1a93e40-6561-44ba-b21b-33f60bc4b19d",
                 "children": [
                   {
                     "label": "flie",
                     "location": "views\\components\\PictureToText\\flie",
                     "type": "folder",
-                    "id": "228eb4c5-0178-4c8e-ad34-bbd3bc47f4c3",
+                    "id": "c9a49e60-9cd3-4e42-8120-52f3dee487a8",
                     "children": [
                       {
                         "label": "chi_sim.traineddata",
@@ -1010,13 +1119,13 @@
                 "label": "QuickConfigurationForm",
                 "location": "views\\components\\QuickConfigurationForm",
                 "type": "folder",
-                "id": "34b720bf-458a-4571-90d0-819f12b35842",
+                "id": "ca3212b1-6372-4d60-b234-3f761775b5c2",
                 "children": [
                   {
                     "label": "vue2",
                     "location": "views\\components\\QuickConfigurationForm\\vue2",
                     "type": "folder",
-                    "id": "3cad60aa-7c2c-4c57-9700-ff30cd4b2f3f",
+                    "id": "6c8c1b5d-979a-4e32-a39f-9b5443754af4",
                     "children": [
                       {
                         "label": "commonFormV2.vue",
@@ -1049,7 +1158,7 @@
                     "label": "vue3",
                     "location": "views\\components\\QuickConfigurationForm\\vue3",
                     "type": "folder",
-                    "id": "dca93332-aca5-4cc3-8753-5b8f288667eb",
+                    "id": "0ef64816-c294-4984-a444-d804c9515d32",
                     "children": [
                       {
                         "label": "commonFormV3.vue",
@@ -1091,13 +1200,13 @@
                 "label": "TabsLayout",
                 "location": "views\\components\\TabsLayout",
                 "type": "folder",
-                "id": "08db49fc-182a-4924-887c-245224aa8739",
+                "id": "a8ecb7c6-f7bf-49bf-a501-3d4a63ffa580",
                 "children": [
                   {
                     "label": "components",
                     "location": "views\\components\\TabsLayout\\components",
                     "type": "folder",
-                    "id": "b8a588d3-65ed-4178-a0f0-32c55b4d0f7c",
+                    "id": "6dc5c9f9-d8cc-4719-8978-275b6744d8d4",
                     "children": [
                       {
                         "label": "TabsLayout.vue",
@@ -1121,13 +1230,13 @@
                 "label": "Tooltips",
                 "location": "views\\components\\Tooltips",
                 "type": "folder",
-                "id": "4989399c-5df2-44f8-96ca-52d538a71e80",
+                "id": "877352d6-d28e-444c-9b07-27abadef9a9c",
                 "children": [
                   {
                     "label": "components",
                     "location": "views\\components\\Tooltips\\components",
                     "type": "folder",
-                    "id": "6a9dac93-a94b-44a9-bdd4-548813513ada",
+                    "id": "427cfe33-4fe6-4e70-af33-266e5c7c7493",
                     "children": [
                       {
                         "label": "Tooltips.vue",
@@ -1160,19 +1269,19 @@
             "label": "developmentSkillsAndBug",
             "location": "views\\developmentSkillsAndBug",
             "type": "folder",
-            "id": "ef6c45ac-9b4e-42a7-8075-066f1095557c",
+            "id": "ad250f81-b2f0-4c55-9f4c-5d0a55a0d8c0",
             "children": [
               {
                 "label": "PracticalOperation",
                 "location": "views\\developmentSkillsAndBug\\PracticalOperation",
                 "type": "folder",
-                "id": "177a2241-fb66-44e9-ada1-74ad2fc913f7",
+                "id": "c12915a7-361b-436d-87b1-bf24ec04e016",
                 "children": [
                   {
                     "label": "cutVideoCover",
                     "location": "views\\developmentSkillsAndBug\\PracticalOperation\\cutVideoCover",
                     "type": "folder",
-                    "id": "aee87be8-2532-451e-9fd1-2a2bc21be949",
+                    "id": "3e1eb431-f9b3-45dd-af66-e1419d373634",
                     "children": [
                       {
                         "label": "index.vue",
@@ -1187,7 +1296,7 @@
                     "label": "elInputNumberInitData",
                     "location": "views\\developmentSkillsAndBug\\PracticalOperation\\elInputNumberInitData",
                     "type": "folder",
-                    "id": "50e37b87-5ed0-4709-806b-995a4ec635db",
+                    "id": "754a35c4-1eb5-462a-b2e3-f399d6949dfc",
                     "children": [
                       {
                         "label": "index.vue",
@@ -1208,7 +1317,7 @@
                     "label": "elTableAddCustomComponent",
                     "location": "views\\developmentSkillsAndBug\\PracticalOperation\\elTableAddCustomComponent",
                     "type": "folder",
-                    "id": "954941bf-34d2-4a67-848e-3e8362da7a4a",
+                    "id": "fc146866-b574-492f-8f7a-f480df91df04",
                     "children": [
                       {
                         "label": "index.vue",
@@ -1223,7 +1332,7 @@
                     "label": "vShowTemplateTwoChildNode",
                     "location": "views\\developmentSkillsAndBug\\PracticalOperation\\vShowTemplateTwoChildNode",
                     "type": "folder",
-                    "id": "d2702270-fe77-4660-945c-782f19086191",
+                    "id": "528c789c-e753-4183-b940-402cd7205648",
                     "children": [
                       {
                         "label": "index.vue",
@@ -1241,7 +1350,7 @@
                 "label": "RelatedArticle",
                 "location": "views\\developmentSkillsAndBug\\RelatedArticle",
                 "type": "folder",
-                "id": "412d02cd-3fa2-40a5-97ea-37cad758d87f",
+                "id": "738cee87-f168-4fc3-83a5-38abfdee4a41",
                 "children": [
                   {
                     "label": "index.vue",
@@ -1265,13 +1374,13 @@
             "label": "error",
             "location": "views\\error",
             "type": "folder",
-            "id": "00bc5e5b-c09d-4933-8f60-a89f4850bccd",
+            "id": "b890382e-fbd1-4fda-af93-d8a2c2a9c951",
             "children": [
               {
                 "label": "403",
                 "location": "views\\error\\403",
                 "type": "folder",
-                "id": "18c62de1-c167-4efc-b53c-9dce17a3a17a",
+                "id": "3c0ef39f-af8a-4655-9493-1700a745523c",
                 "children": [
                   {
                     "label": "index.vue",
@@ -1286,7 +1395,7 @@
                 "label": "404",
                 "location": "views\\error\\404",
                 "type": "folder",
-                "id": "c3d0d0a7-85a8-450e-967d-fcac8d4c231b",
+                "id": "c5bf81d3-c3ba-488e-9d02-c9fa06375cb3",
                 "children": [
                   {
                     "label": "index.vue",
@@ -1304,13 +1413,13 @@
             "label": "functions",
             "location": "views\\functions",
             "type": "folder",
-            "id": "6634f706-2456-4a30-abcb-13512fbb9d8a",
+            "id": "ca1324aa-0803-48bb-9010-81f19ac0393f",
             "children": [
               {
                 "label": "TableMemorySelection",
                 "location": "views\\functions\\TableMemorySelection",
                 "type": "folder",
-                "id": "7b20b220-0527-4e58-9c9a-905f201230bd",
+                "id": "523b5d92-d287-4bc5-b7b3-76e355386667",
                 "children": [
                   {
                     "label": "index.vue",
@@ -1346,19 +1455,19 @@
             "label": "home",
             "location": "views\\home",
             "type": "folder",
-            "id": "7376b949-bbb0-44f9-9871-52ce7d281d60",
+            "id": "183afdf4-166f-4927-ab1c-23751eed12d5",
             "children": [
               {
                 "label": "components",
                 "location": "views\\home\\components",
                 "type": "folder",
-                "id": "a52cd869-fb3a-4b7c-8258-b09e575290c9",
+                "id": "242ca0ca-e818-401f-93d1-4d9746224dce",
                 "children": [
                   {
                     "label": "ModuleItem",
                     "location": "views\\home\\components\\ModuleItem",
                     "type": "folder",
-                    "id": "9d0b2b2f-4408-4832-bf1c-72a883b846fc",
+                    "id": "419dfe76-a1be-429e-82b0-cfbec3aaa9cd",
                     "children": [
                       {
                         "label": "ComponentsModule.vue",
@@ -1421,7 +1530,7 @@
             "label": "login",
             "location": "views\\login",
             "type": "folder",
-            "id": "d6736a14-50bb-4ad0-9345-e487e5f466a1",
+            "id": "a00356e3-d408-44bd-b54d-6f0b25c6401a",
             "children": [
               {
                 "label": "index.vue",
@@ -1472,19 +1581,19 @@
     "label": "childrenApp",
     "location": "childrenApp",
     "type": "folder",
-    "id": "b14ebecc-b386-4866-a8cb-07fdd1c19a87",
+    "id": "205f99a5-a2be-40da-af4b-366e39d779ef",
     "children": [
       {
         "label": "sub-html",
         "location": "sub-html",
         "type": "folder",
-        "id": "bfc7a4c3-6850-4511-baa3-673f008e2e49",
+        "id": "8e5db660-85db-4472-9e2a-202d93350736",
         "children": [
           {
             "label": "js",
             "location": "sub-html\\js",
             "type": "folder",
-            "id": "277fed95-cf4f-4348-b0db-792fe89e30db",
+            "id": "22ea8adf-b5d6-461a-bafa-d3db0aacf0c7",
             "children": [
               {
                 "label": "main.js",
@@ -1505,7 +1614,7 @@
             "label": "public",
             "location": "sub-html\\public",
             "type": "folder",
-            "id": "12e1d003-e792-4266-b865-46232c711de1",
+            "id": "56fc9e7d-f4df-4347-9f1e-41aa5339bdf5",
             "children": [
               {
                 "label": "index.html",
@@ -1520,7 +1629,7 @@
             "label": "scripts",
             "location": "sub-html\\scripts",
             "type": "folder",
-            "id": "b1ac9dd6-0163-4ec9-ba93-5924cc6a62a1",
+            "id": "4567ed83-89cf-4678-a3f7-b3dd4f0ca6de",
             "children": [
               {
                 "label": "build.sh",
@@ -1561,7 +1670,7 @@
         "label": "sub-react",
         "location": "sub-react",
         "type": "folder",
-        "id": "1cac2e5d-fbce-4d6a-a8a8-64e5bddcb481",
+        "id": "36cb0919-08b4-4de2-bb72-9271364e3ae3",
         "children": [
           {
             "label": "node_modules",
@@ -1573,7 +1682,7 @@
             "label": "public",
             "location": "sub-react\\public",
             "type": "folder",
-            "id": "984d32b9-f5a8-45b5-8836-2143e325099f",
+            "id": "fce49c00-cced-4ce2-8074-b87acd1d4106",
             "children": [
               {
                 "label": "favicon.ico",
@@ -1615,7 +1724,7 @@
             "label": "src",
             "location": "sub-react\\src",
             "type": "folder",
-            "id": "6a3858f5-5e1f-41be-be9f-44fda3834582",
+            "id": "114e7bb8-1a74-4e2c-9623-06b4ac60f5c1",
             "children": [
               {
                 "label": "App.css",
@@ -1722,13 +1831,13 @@
         "label": "sub-vue3",
         "location": "sub-vue3",
         "type": "folder",
-        "id": "73cc3997-2315-4350-8acc-038929eeee96",
+        "id": "80346c75-53e7-4829-98e7-a82d8b6751c6",
         "children": [
           {
             "label": "public",
             "location": "sub-vue3\\public",
             "type": "folder",
-            "id": "6894565c-bf15-4338-825c-55d5d5f4700e",
+            "id": "4bd2274e-6394-41d8-a402-552e069c60c9",
             "children": [
               {
                 "label": "favicon.ico",
@@ -1748,13 +1857,13 @@
             "label": "src",
             "location": "sub-vue3\\src",
             "type": "folder",
-            "id": "2cf2eba1-e054-46ee-bb85-b8d76f4b633f",
+            "id": "850f1e0d-b741-455c-bded-30d2aad033e5",
             "children": [
               {
                 "label": "assets",
                 "location": "sub-vue3\\src\\assets",
                 "type": "folder",
-                "id": "af3ef18a-ee32-483c-b9bc-9ef120d95422",
+                "id": "5ff4298b-6551-404b-93ac-62662003931c",
                 "children": [
                   {
                     "label": "logo.png",
@@ -1768,7 +1877,7 @@
                 "label": "components",
                 "location": "sub-vue3\\src\\components",
                 "type": "folder",
-                "id": "8e81b82b-a69b-4ae5-8bca-8b2f3349de46",
+                "id": "28a5d300-0982-42bb-95d6-17040157c099",
                 "children": [
                   {
                     "label": "HelloWorld.vue",
@@ -1783,7 +1892,7 @@
                 "label": "router",
                 "location": "sub-vue3\\src\\router",
                 "type": "folder",
-                "id": "5c146748-3ae0-4ca1-a907-2d7e3830579e",
+                "id": "4ef3ee1e-df1b-41d3-a838-138546ccd1f5",
                 "children": [
                   {
                     "label": "index.js",
@@ -1798,7 +1907,7 @@
                 "label": "store",
                 "location": "sub-vue3\\src\\store",
                 "type": "folder",
-                "id": "96bba113-be41-4ffa-9128-1df3770c512f",
+                "id": "6aeb885d-ba35-4339-867a-96380bcc09ec",
                 "children": [
                   {
                     "label": "index.js",
@@ -1813,13 +1922,13 @@
                 "label": "views",
                 "location": "sub-vue3\\src\\views",
                 "type": "folder",
-                "id": "3bdbbc23-4cc1-4c85-a865-b10d0d788a73",
+                "id": "4a418b92-5954-4365-999a-b9ff8b09a024",
                 "children": [
                   {
                     "label": "components",
                     "location": "sub-vue3\\src\\views\\components",
                     "type": "folder",
-                    "id": "3eab0258-78ca-468d-b722-4f463225e7b6",
+                    "id": "64407092-dfeb-40e7-9dac-4b8db2a909fd",
                     "children": [
                       {
                         "label": "index.vue",
@@ -1834,13 +1943,13 @@
                     "label": "sliderCharts",
                     "location": "sub-vue3\\src\\views\\sliderCharts",
                     "type": "folder",
-                    "id": "662c2c49-a5ef-4b8c-82a6-c8d3054c9053",
+                    "id": "6de34380-eed2-48b7-a0c0-4549788ecbf9",
                     "children": [
                       {
                         "label": "components",
                         "location": "sub-vue3\\src\\views\\sliderCharts\\components",
                         "type": "folder",
-                        "id": "09a78e10-2d13-4b49-82f4-e6d1c15b0818",
+                        "id": "004a2266-7267-4b46-8910-2d87172a9caf",
                         "children": [
                           {
                             "label": "sliderCharts.vue",
