@@ -6,7 +6,7 @@ import useVitePlugins from './vite-plugins'
 export default defineConfig({
   // publicDir: false,
   plugins: [
-    ...useVitePlugins(),
+    ...useVitePlugins()
   ],
   resolve: {
     alias: {

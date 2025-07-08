@@ -5,7 +5,7 @@
   "scripts": {
     "fetch-data": "cd nodeFetchData && node fetchData.js",
     "dev": "vite",
-    "start": "vite",
+    "start": "node getFileTree.js",
     "server": "concurrently \"nodemon ./server/api.js\" \"npm run dev\"",
     "build": "vite build",
     "preview": "vite preview",
@@ -13,7 +13,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.1.0",
+    "@element-plus/icons": "^0.0.11",
+    "@element-plus/icons-vue": "^2.3.1",
     "@vueuse/core": "^10.3.0",
     "axios": "^1.4.0",
     "concurrently": "^8.2.2",
@@ -22,6 +23,8 @@
     "js-cookie": "^3.0.5",
     "jsencrypt": "^3.3.2",
     "mitt": "^3.0.1",
+    "monaco-editor": "^0.52.2",
+    "monaco-editor-webpack-plugin": "^7.1.0",
     "nprogress": "^0.2.0",
     "pinia": "^2.1.4",
     "pinia-plugin-persistedstate": "^3.2.0",
@@ -29,6 +32,7 @@
     "qiankun": "^2.8.4",
     "tesseract.js": "^2.1.4",
     "tesseract.js-core": "^5.1.0",
+    "uuid": "^11.1.0",
     "vue": "^3.3.10",
     "vue-i18n": "^9.2.2",
     "vue-router": "^4.2.4"
@@ -44,6 +48,7 @@
     "unplugin-auto-import": "^0.16.6",
     "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.6",
+    "vite-plugin-monaco-editor": "^1.1.0",
     "vite-plugin-svg-icons": "^2.0.1"
   }
 }
